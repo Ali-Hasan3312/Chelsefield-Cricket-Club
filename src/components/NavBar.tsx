@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import logo from "../assets/greenLogo-removebg-preview.png"
-const NavBar = () => {
+const NavBar = ({onScrollTo}:any) => {
   return (
     <div className="h-24 w-full bg-black flex items-center justify-between gap-8 px-4">
         <div className=" uppercase relative text-lg text-lime-400 font-semibold ml-4">
@@ -9,12 +9,12 @@ const NavBar = () => {
         </div>
         <div>
             <div className="flex gap-16 text-white text-lg mr-4 font-semibold">
-                <Link to={""} className=" hover:text-lime-400 transition-all duration-300">Home</Link>
-                <Link to={""} className=" hover:text-lime-400 transition-all duration-300">Teams</Link>
-                <Link to={""} className=" hover:text-lime-400 transition-all duration-300">About Us</Link>
+                <Link to={"/"} className=" hover:text-lime-400 transition-all duration-300">Home</Link>
+                <Link to={"/teams"} className=" hover:text-lime-400 transition-all duration-300">Teams</Link>
+                <Link to={"/about"} className=" hover:text-lime-400 transition-all duration-300">About Us</Link>
                 <Link to={"/fixtures"} className=" hover:text-lime-400 transition-all duration-300">Fixtures & Results</Link>
-                <Link to={""} className=" hover:text-lime-400 transition-all duration-300">Statistics</Link>
-                <Link to={""} className=" hover:text-lime-400 transition-all duration-300">Get In Touch</Link>
+                <Link to={"/stats"} className=" hover:text-lime-400 transition-all duration-300">Statistics</Link>
+                <button onClick={onScrollTo}  className=" hover:text-lime-400 transition-all duration-300">Get In Touch</button>
             </div>
         </div>
        <div className="flex items-center gap-4">

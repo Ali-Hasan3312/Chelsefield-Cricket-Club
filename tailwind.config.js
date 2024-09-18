@@ -10,7 +10,13 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'customSky': '#9baebd',
+     
+      },
+     
+    },
   },
   plugins: [addVariablesForColors],
   

@@ -64,7 +64,7 @@ const Footer = () => {
             <p className=" text-white text-center">© 2024 Chelsefield Cricket Club. All Rights Reserved.</p>
         </div>
         <div className=" text-white text-center ml-1">
-            Powered by <span className=" text-lime-400">HYM GLOBAL</span>
+            Powered by <Link to={"https://hymglobal.com/"} className=" text-lime-400 hover:underline">HYM GLOBAL</Link>
         </div>
        </div>
     </div>
