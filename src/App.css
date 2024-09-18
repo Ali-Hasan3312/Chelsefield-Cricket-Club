@@ -1,0 +1,14 @@
+body, html{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.bg{
+  background-image: url("https://images.wallpaperscraft.com/image/single/sneakers_sport_running_107874_1366x768.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
