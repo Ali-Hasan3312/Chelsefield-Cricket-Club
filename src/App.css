@@ -12,3 +12,37 @@ body, html{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg2{
+  background-image: url("https://images.wallpaperscraft.com/image/single/athlete_sport_man_118731_1280x1024.jpg");
+  height: 60vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.diagonal-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as per your requirement */
+  overflow: hidden;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* Adjust this width to control how much of the container is covered */
+  height: 100%;
+ 
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: 1; /* Ensures it stays on top of the image */
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  z-index: 0; /* Keeps the image behind the diagonal background */
+}

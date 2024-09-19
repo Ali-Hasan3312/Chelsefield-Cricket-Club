@@ -1,14 +1,20 @@
 import { FaLocationDot } from "react-icons/fa6";
-import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
-import { forwardRef } from "react";
-interface ContactSectionProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-const GetInTouch =  forwardRef<HTMLDivElement, ContactSectionProps>((props, ref) => {
+import { IoCall } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { PiGreaterThanLight } from "react-icons/pi";
+const GetInTouch =  () => {
   return (
-    <div ref={ref} {...props} className="h-[770px] w-full bg-white">
-         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Get In Touch</h1>
-        <div className=" h-[600px] grid grid-cols-[70%_30%] w-[80%] mx-auto shadow-lg mt-12">
+    <>
+    <div className="h-[800px] w-full bg-gray-800">
+        <div className=" flex items-center gap-1 ml-32 py-4 text-white">
+            <Link to={"/"} className=" hover:underline">Home</Link>
+            <PiGreaterThanLight className=" text-sm" />
+            <span>Get In Touch</span>
+        </div>
+        <hr />
+         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider text-white">Get In Touch</h1>
+        <div className=" h-[600px] grid grid-cols-[70%_30%] w-[80%] mx-auto shadow-lg mt-4">
         <div className=" bg-white">
             <div className=" w-[80%] mx-auto mt-8">
             <h1 className=" text-lg font-medium">Send Us A Message</h1>
@@ -56,7 +62,8 @@ const GetInTouch =  forwardRef<HTMLDivElement, ContactSectionProps>((props, ref)
         </div>
         
     </div>
+    </>
   )
-})
+}
 
 export default GetInTouch
