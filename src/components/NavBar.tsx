@@ -13,10 +13,10 @@ const NavBar = () => {
             <div className="flex gap-16 text-white text-lg mr-4 font-semibold">
                 <Link to={"/"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/"? " text-lime-400" : ""}`}>Home</Link>
                 <Link to={"/teams"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/teams"? " text-lime-400" : ""}`}>Teams</Link>
-                <Link to={"/about"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/about"? " text-lime-400" : ""}`}>About Us</Link>
-                <Link to={"/fixtures"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/fixtures"? " text-lime-400" : ""}`}>Fixtures & Results</Link>
+                <Link to={"/about"} className={`hover:text-lime-400 transition-all duration-300 text-nowrap ${location.pathname==="/about"? " text-lime-400" : ""}`}>About Us</Link>
+                <Link to={"/fixtures"} className={`hover:text-lime-400 transition-all duration-300 text-nowrap ${location.pathname==="/fixtures"? " text-lime-400" : ""}`}>Fixtures & Results</Link>
                 <Link to={"/stats"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/stats"? " text-lime-400" : ""}`}>Statistics</Link>
-                <Link to={"/touch"}  className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/touch"? " text-lime-400" : ""}`}>Get In Touch</Link>
+                <Link to={"/touch"}  className={`hover:text-lime-400 transition-all duration-300 text-nowrap ${location.pathname==="/touch"? " text-lime-400" : ""}`}>Get In Touch</Link>
             </div>
         </div>
        <div className="flex items-center gap-4">

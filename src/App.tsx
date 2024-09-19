@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import GetInTouch from './components/GetInTouch'
 import NavBar from './components/NavBar'
 import Teams from './pages/Teams'
+import { Stats } from './pages/Stats'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/fixtures' element={<Fixtures />} />
       <Route path='/touch' element={<GetInTouch />} />
       <Route path='/teams' element={<Teams />} />
+      <Route path='/stats' element={<Stats />} />
     </Routes>
     <Footer />
    </Router>
