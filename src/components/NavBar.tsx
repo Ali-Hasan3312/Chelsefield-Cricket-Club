@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import logo from "../assets/greenLogo-removebg-preview.png"
-const NavBar = ({onScrollTo}:any) => {
+const NavBar = () => {
+  const location = useLocation()
+  
   return (
     <div className="h-24 w-full bg-black flex items-center justify-between gap-8 px-4">
         <div className=" uppercase relative text-lg text-lime-400 font-semibold ml-4">
@@ -9,12 +11,12 @@ const NavBar = ({onScrollTo}:any) => {
         </div>
         <div>
             <div className="flex gap-16 text-white text-lg mr-4 font-semibold">
-                <Link to={"/"} className=" hover:text-lime-400 transition-all duration-300">Home</Link>
-                <Link to={"/teams"} className=" hover:text-lime-400 transition-all duration-300">Teams</Link>
-                <Link to={"/about"} className=" hover:text-lime-400 transition-all duration-300">About Us</Link>
-                <Link to={"/fixtures"} className=" hover:text-lime-400 transition-all duration-300">Fixtures & Results</Link>
-                <Link to={"/stats"} className=" hover:text-lime-400 transition-all duration-300">Statistics</Link>
-                <button onClick={onScrollTo}  className=" hover:text-lime-400 transition-all duration-300">Get In Touch</button>
+                <Link to={"/"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/"? " text-lime-400" : ""}`}>Home</Link>
+                <Link to={"/teams"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/teams"? " text-lime-400" : ""}`}>Teams</Link>
+                <Link to={"/about"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/about"? " text-lime-400" : ""}`}>About Us</Link>
+                <Link to={"/fixtures"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/fixtures"? " text-lime-400" : ""}`}>Fixtures & Results</Link>
+                <Link to={"/stats"} className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/stats"? " text-lime-400" : ""}`}>Statistics</Link>
+                <Link to={"/touch"}  className={`hover:text-lime-400 transition-all duration-300 ${location.pathname==="/touch"? " text-lime-400" : ""}`}>Get In Touch</Link>
             </div>
         </div>
        <div className="flex items-center gap-4">

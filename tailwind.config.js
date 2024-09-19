@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         'customSky': '#9baebd',
+        'customBlack': '#2f3320',
      
       },
      
