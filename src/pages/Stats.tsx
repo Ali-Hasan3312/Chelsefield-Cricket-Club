@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { FaUserCircle } from "react-icons/fa";
 export const Stats = () => {
   return (
-    <div className="h-[900px] w-full bg-gray-800">
+    <div className=" pb-8 w-full bg-gray-800">
         <div className=" flex items-center gap-1 ml-32 py-4 text-white">
             <Link to={"/"} className=" hover:underline">Home</Link>
             <PiGreaterThanLight className=" text-sm" />

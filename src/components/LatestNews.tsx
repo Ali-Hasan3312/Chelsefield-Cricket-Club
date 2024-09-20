@@ -4,7 +4,7 @@ const LatestNews = () => {
   return (
     <div className=" w-full bg-white">
         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Latest News</h1>
-        <div className=" w-[80%] bg-white h-[720px] mx-auto mt-8">
+        <div className=" w-[80%] bg-white  mx-auto mt-8">
             <hr />
             <div>
                 <div className="flex mt-4 gap-4">

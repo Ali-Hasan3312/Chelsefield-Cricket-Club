@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Sponsors = () => {
   return (
-    <div className='w-full bg-white h-[340px] pt-8'>
+    <div className='w-full bg-white py-8'>
         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Our sponsors</h1>
         <p className=' text-base mt-4 text-center'>Find out more about our range of <Link to={"/sponsorship-opportunities"} className=' underline font-medium hover:opacity-70'>sponsorship opportunities</Link> for clients of all sizes here.</p>
         <div className='flex justify-center mt-20 gap-8'>

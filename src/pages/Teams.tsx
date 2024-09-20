@@ -1,97 +1,74 @@
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import player1 from '../assets/All Players/player1.jpg'
+import player2 from '../assets/All Players/player2.jpg'
+import player3 from '../assets/All Players/player3.jpg'
+import player4 from '../assets/All Players/player4.jpg'
+import player5 from '../assets/All Players/player5.jpg'
+import player6 from '../assets/All Players/player6.jpg'
+import player7 from '../assets/All Players/player7.jpg'
+import player8 from '../assets/All Players/player8.jpg'
+import player9 from '../assets/All Players/player9.jpg'
+import player10 from '../assets/All Players/player10.jpg'
+import player11 from '../assets/All Players/player11.jpg'
+import player12 from '../assets/All Players/player12.jpg'
+import player13 from '../assets/All Players/player13.jpg'
+import player14 from '../assets/All Players/player14.jpg'
+import player15 from '../assets/All Players/player15.jpg'
+interface PlayerType {
+    playerName: string,
+    role: string,
+    image: string,
+    fb?: string,
+    insta?: string
+}
+const Players = ({playerName, role, image} : PlayerType) =>{
+    return(
+        <div className="flex flex-col text-white gap-2">
+        <img className=" h-[340px] w-[320px] object-cover" src={image} alt="" />
+        <h2 className=" text-xl uppercase tracking-widest">{playerName}</h2>
+        <span className=" uppercase text-gray-400 tracking-widest">{role}</span>
+        <div className="flex items-center">
+            <FaFacebook className=" inline-block text-2xl text-blue-500 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-blue-500 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-blue-500 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
+        </div>
+    </div>
+    )
+}
 const Teams = () => {
-    const img1 = "https://images.unsplash.com/photo-1593766729977-e1f01ee30e49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNyaWNrZXQlMjBwbGF5ZXJzfGVufDB8fDB8fHww"
-    const img2 = "https://plus.unsplash.com/premium_photo-1722351690047-e60058864b84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3JpY2tldCUyMHBsYXllcnN8ZW58MHx8MHx8fDA%3D"
-    const img3 = "https://images.unsplash.com/photo-1593766821405-f605e0f9535f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3JpY2tldCUyMHBsYXllcnN8ZW58MHx8MHx8fDA%3D"
-    const img4 = "https://plus.unsplash.com/premium_photo-1661893462440-c3cc98540f2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNyaWNrZXQlMjBwbGF5ZXJzfGVufDB8fDB8fHww"
-    const img5 = "https://plus.unsplash.com/premium_photo-1661859255793-03767fbafadf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGNyaWNrZXQlMjBwbGF5ZXJzfGVufDB8fDB8fHww"
-    const img6 = "https://plus.unsplash.com/premium_photo-1661892048559-afda5ed9aa4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGNyaWNrZXQlMjBwbGF5ZXJzfGVufDB8fDB8fHww"
-    const img7 = "https://plus.unsplash.com/premium_photo-1661870244292-234d0a742fa2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fGNyaWNrZXQlMjBwbGF5ZXJzfGVufDB8fDB8fHww"
-    const img8 = "https://plus.unsplash.com/premium_photo-1661858833721-a949498c8191?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGNyaWNrZXQlMjBwbGF5ZXJzfGVufDB8fDB8fHww"
+ 
   return (
     <div>
-        <div className=' bg-gray-950 h-[2400px]'>
-       
+        <div className=' bg-gray-950 pb-8'>
        <div className='bg2 relative'></div>
        <div className=' absolute top-[40%] left-[20%] text-white w-[60%] mx-auto'>
            <h1 className=' text-[60px] font-bold uppercase leading-[1] text-center'>Our Teams</h1>
        </div>
-           <div className="relative h-[1900px] w-[90%] bg-gray-800 mt-8 mx-auto">
+           <div className="relative pb-12 w-[90%] bg-gray-800 mt-8 mx-auto">
            <div className="flex items-center justify-between px-8 text-white pt-12">
            <h1 className=" text-4xl">Our Squad</h1>
             <p className=" w-[40%] text-lg">
             Behind Undefeated stands a dedicated team of individuals who are passionate about sports, motivation, and making a positive impact. Meet the faces driving our mission forward.</p>
            </div>
            <div className="grid grid-cols-3 w-[90%] mx-auto mt-12 gap-8">
-            <div className="flex flex-col text-white gap-2">
-                <img className=" h-[340px] w-[320px] object-cover" src={img1} alt="" />
-                <h2 className=" text-xl uppercase tracking-widest">Hogan Techaira</h2>
-                <span className=" uppercase text-gray-400 tracking-widest">Opening Batsman</span>
-                <div className="flex items-center">
-                    <FaFacebook className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
-                </div>
-            </div>
-            <div className="flex flex-col text-white gap-2">
-                <img className=" h-[340px] w-[320px] object-cover" src={img2} alt="" />
-                <h2 className=" text-xl uppercase tracking-widest">Samuel Hughes</h2>
-                <span className=" uppercase text-gray-400 tracking-widest">Opening Batsman</span>
-                <div className="flex items-center">
-                    <FaFacebook className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
-                </div>
-            </div>
-            <div className="flex flex-col text-white gap-2">
-                <img className=" h-[340px] w-[320px] object-cover" src={img3} alt="" />
-                <h2 className=" text-xl uppercase tracking-widest">Daniel Hill</h2>
-                <span className=" uppercase text-gray-400 tracking-widest">Middle-order Batsman</span>
-                <div className="flex items-center">
-                    <FaFacebook className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
-                </div>
-            </div>
-            <div className="flex flex-col text-white gap-2">
-                <img className=" h-[340px] w-[320px] object-cover" src={img4} alt="" />
-                <h2 className=" text-xl uppercase tracking-widest">Lucas Turner</h2>
-                <span className=" uppercase text-gray-400 tracking-widest">Fast Bowler</span>
-                <div className="flex items-center">
-                    <FaFacebook className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
-                </div>
-            </div>
-            <div className="flex flex-col text-white gap-2">
-                <img className=" h-[340px] w-[320px] object-cover" src={img5} alt="" />
-                <h2 className=" text-xl uppercase tracking-widest">Benjamin White</h2>
-                <span className=" uppercase text-gray-400 tracking-widest">Spin Bowler</span>
-                <div className="flex items-center">
-                    <FaFacebook className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
-                </div>
-            </div>
-            <div className="flex flex-col text-white gap-2">
-                <img className=" h-[340px] w-[320px] object-cover" src={img6} alt="" />
-                <h2 className=" text-xl uppercase tracking-widest">James Anderson</h2>
-                <span className=" uppercase text-gray-400 tracking-widest">Wicketkeeper</span>
-                <div className="flex items-center">
-                    <FaFacebook className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
-                </div>
-            </div>
-            <div className="flex flex-col text-white gap-2">
-                <img className=" h-[340px] w-[320px] object-cover" src={img7} alt="" />
-                <h2 className=" text-xl uppercase tracking-widest">Oliver Carter</h2>
-                <span className=" uppercase text-gray-400 tracking-widest">All Rounder</span>
-                <div className="flex items-center">
-                    <FaFacebook className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
-                </div>
-            </div>
-            <div className="flex flex-col text-white gap-2">
-                <img className=" h-[340px] w-[320px] object-cover" src={img8} alt="" />
-                <h2 className=" text-xl uppercase tracking-widest">Ethan Taylor</h2>
-                <span className=" uppercase text-gray-400 tracking-widest">Bowler</span>
-                <div className="flex items-center">
-                    <FaFacebook className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaXTwitter className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer mr-4" /> <FaInstagram className=" inline-block text-2xl text-lime-400 hover:text-gray-200 transition-all duration-300 cursor-pointer" />
-                </div>
-            </div>
+           <Players playerName="Hogan Techaira" role="Opening Batsman" image={player1} />
+           <Players playerName="Samuel Hughes" role="Opening Batsman" image={player2} />
+           <Players playerName="Daniel Hill" role="Middle-order Batsman" image={player3} />
+           <Players playerName="Lucas Turner" role="Fast Bowler" image={player4} />
+           <Players playerName="Samuel Hughes" role="Opening Batsman" image={player5} />
+           <Players playerName="Daniel Hill" role="Middle-order Batsman" image={player6} />
+           <Players playerName="Lucas Turner" role="Fast Bowler" image={player7} />
+           <Players playerName="Samuel Hughes" role="Opening Batsman" image={player8} />
+           <Players playerName="Charlie Evans" role="Wicketkeeper" image={player9} />
+           <Players playerName="Oscar Thompson" role="Fast Bowler" image={player10} />
+           <Players playerName="Jacob Morris" role="Spin Bowler" image={player11} />
+           <Players playerName="Henry Clark" role="Power Hitter" image={player12} />
+           <Players playerName="Joseph Allen" role="All-rounder" image={player13} />
+           <Players playerName="Daniel Robinson" role="Slip Fielder (Batsman)" image={player14} />
+           <Players playerName="Sebastian Green" role="Power Hitter" image={player15} />
+
            </div>
            </div>
-          
    </div>
     </div>
   )

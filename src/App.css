@@ -6,16 +6,23 @@ body, html{
   font-family: "Poppins", sans-serif;
 }
 .bg{
-  background-image: url("https://images.wallpaperscraft.com/image/single/sneakers_sport_running_107874_1366x768.jpg");
+  background-image: url("./assets//Hero_Image1.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg2{
-  background-image: url("https://images.wallpaperscraft.com/image/single/athlete_sport_man_118731_1280x1024.jpg");
+  background-image: url("./assets/Our_Teams.png");
   height: 60vh;
-  background-position: bottom;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg3{
+  background-image: url("./assets/hireHall//lady.jpg");
+  height: 60vh;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,7 +39,6 @@ body, html{
   left: 0;
   width: 50%; /* Adjust this width to control how much of the container is covered */
   height: 100%;
- 
   clip-path: polygon(0 0, 100% 0, 0 100%);
   z-index: 1; /* Ensures it stays on top of the image */
 }

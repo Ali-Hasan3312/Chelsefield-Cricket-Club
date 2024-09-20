@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const History = () => {
   return (
-    <div className='w-full bg-white h-[500px] pt-8'>
+    <div className='w-full bg-white pt-8'>
         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Club History</h1>
         <div className="flex items-center justify-center gap-8 mt-8 w-[70%] mx-auto">
             <div className=" h-[400px] w-[400px] flex flex-col gap-3">

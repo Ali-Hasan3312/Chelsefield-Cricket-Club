@@ -1,7 +1,7 @@
 
 const ClubContacts = () => {
   return (
-    <div className='h-[820px] w-full bg-white pt-8'>
+    <div className='w-full bg-white pt-8'>
         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Key club contacts</h1>
         <div className="grid grid-cols-4 w-[70%] gap-4 mx-auto mt-8">
          <div className="w-[200px] h-auto">

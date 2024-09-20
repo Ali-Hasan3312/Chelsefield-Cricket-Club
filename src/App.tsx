@@ -10,6 +10,8 @@ import GetInTouch from './components/GetInTouch'
 import NavBar from './components/NavBar'
 import Teams from './pages/Teams'
 import { Stats } from './pages/Stats'
+import HallBooking from './components/HallBooking'
+import JoinUs from './components/JoinUs'
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <Route path='/touch' element={<GetInTouch />} />
       <Route path='/teams' element={<Teams />} />
       <Route path='/stats' element={<Stats />} />
+      <Route path='/hall' element={<HallBooking />} />
+      <Route path='/join' element={<JoinUs />} />
     </Routes>
     <Footer />
    </Router>

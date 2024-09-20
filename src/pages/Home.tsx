@@ -2,7 +2,6 @@ import { Suspense, lazy } from 'react';
 
 const AboutClub = lazy(() => import('../components/AboutClub'));
 const ClubContacts = lazy(() => import('../components/ClubContacts'));
-const GetInTouch = lazy(() => import('../components/GetInTouch'));
 const Ground = lazy(() => import('../components/Ground'));
 const HeroSection = lazy(() => import('../components/HeroSection'));
 const History = lazy(() => import('../components/History'));
@@ -24,7 +23,7 @@ const Home = () => {
         <History />
         <PastPlayers />
         <Sponsors />
-        <GetInTouch />
+        
       </div>
     </Suspense>
   );
