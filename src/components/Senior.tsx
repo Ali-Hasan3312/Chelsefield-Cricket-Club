@@ -1,37 +1,18 @@
 import { PiGreaterThanBold } from "react-icons/pi";
 import logo from "../assets/Chelsefield_blue-removebg-preview.png";
+import resultsImage2 from "../assets/matchResults2.jpg";
+import { Link } from "react-router-dom";
 const Senior = () => {
   return (
     <div className='mt-4'>
-        <div className="grid grid-cols-1 gap-8">
-        <div className='w-[90%] mx-auto pb-4 bg-white rounded-lg cursor-pointer'>
-            <h2 className=' w-full flex items-center justify-center text-xl font-semibold uppercase rounded-t-lg bg-black text-white h-10'>Upcoming Matches</h2>
-           <div className=' mt-4 flex items-center justify-between px-4'>
-            <span className=' h-8 p-2 w-24 bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Friendly</span>
-            <span className=' font-medium text-gray-600'>22-Sep - 16:30</span>
-           </div>
-        <div className='flex items-center justify-between px-8 mt-4'>
-            <div className=' flex flex-col items-center gap-8'>
-                <div className=' flex items-center font-semibold uppercase'>
-                    <img className='h-24 w-32 object-cover' src={logo} alt="" />
-                    <span>Chelsefield</span>
-                </div>
-                <span className=' font-semibold uppercase'>Sunday Tigers</span>
-                <p className=' font-semibold text-gray-600'>Chelsefield Cricket Club
-                </p>
-            </div>
-            <div>
-                <PiGreaterThanBold className=' text-xl text-gray-600' />
-            </div>
-        </div>
-        </div>
-        <div className='pb-4 w-[90%] mx-auto bg-white rounded-lg cursor-pointer'>
+        <div className="grid grid-cols-2">
+        <div className='pb-4 w-[90%] mx-auto bg-white rounded-lg'>
             <h2 className=' w-full flex items-center justify-center text-xl font-semibold uppercase rounded-t-lg bg-black text-white h-10'>Recent results</h2>
            <div className=' mt-4 flex items-center justify-between px-4'>
             <span className=' h-8 p-2 w-48 text-nowrap bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Cancelled - Friendly</span>
             <span className=' font-medium text-gray-600'>14 Sep</span>
            </div>
-        <div className='flex items-center justify-between px-8 mt-4'>
+        <div className='flex items-center justify-between relative px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
             <div className=' flex flex-col items-center gap-8'>
                <div className="">
                <div className=' flex items-center font-semibold uppercase'>
@@ -50,13 +31,14 @@ const Senior = () => {
                 <PiGreaterThanBold className=' text-xl text-gray-600 ml-20' />
                 <span className=" h-12 w-14 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">P</span>
             </div>
+            <Link className=" absolute top-0 left-0 h-full w-full" to={"/match-details"}></Link>
         </div>
         <hr className=" mt-4" />
         <div className=' mt-4 flex items-center justify-between px-4'>
             <span className=' h-8 p-2 w-48 text-nowrap bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Division 2 - 2nd xi</span>
             <span className=' font-medium text-gray-600'>7 Sep</span>
            </div>
-        <div className='flex items-center justify-between px-8 mt-4'>
+        <div className='flex items-center justify-between px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
             <div className=' flex flex-col items-center gap-8'>
                <div className="">
                <div className=' flex items-center font-semibold uppercase'>
@@ -82,7 +64,7 @@ const Senior = () => {
             <span className=' h-8 p-2 w-48 text-nowrap bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Division 3 East</span>
             <span className=' font-medium text-gray-600'>7 Sep</span>
            </div>
-        <div className='flex items-center justify-between px-8 mt-4'>
+        <div className='flex items-center justify-between px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
             <div className=' flex flex-col items-center gap-8'>
                <div className="">
                <div className=' flex items-center font-semibold uppercase'>
@@ -101,11 +83,37 @@ const Senior = () => {
                 <span className=" h-12 w-20 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">178/4</span>
             </div>
         </div>
+        
+        </div>
+        <div>
+
+        <div className='w-[90%] h-fit mx-auto bg-white rounded-lg cursor-pointer'>
+            <h2 className=' w-full flex items-center justify-center text-xl font-semibold uppercase rounded-t-lg bg-black text-white h-10'>Upcoming Matches</h2>
+           <div className=' mt-4 flex items-center justify-between px-4'>
+            <span className=' h-8 p-2 w-24 bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Friendly</span>
+            <span className=' font-medium text-gray-600'>22-Sep - 16:30</span>
+           </div>
+        <div className='flex items-center justify-between px-8 mt-4 cursor-pointer pb-4 hover:bg-gray-400/20 transition-all duration-300'>
+            <div className=' flex flex-col items-center gap-8'>
+                <div className=' flex items-center font-semibold uppercase'>
+                    <img className='h-24 w-32 object-cover' src={logo} alt="" />
+                    <span>Chelsefield</span>
+                </div>
+                <span className=' font-semibold uppercase'>Sunday Tigers</span>
+                <p className=' font-semibold text-gray-600'>Chelsefield Cricket Club
+                </p>
+            </div>
+            <div>
+                <PiGreaterThanBold className=' text-xl text-gray-600' />
+            </div>
+        </div>
+        </div>
+        <img src={resultsImage2} className=" w-[90%] h-[60%] mx-auto rounded-lg mt-5 object-cover" alt="" />
         </div>
         </div>
         <div className=" h-12 w-52 mx-auto flex items-center justify-center mt-8 cursor-pointer text-lg font-bold uppercase rounded-[2rem] bg-white">View All Matches</div>
         <div className="flex items-start justify-center gap-8 mt-8">
-        <div className=' h-[420px] w-[550px] bg-white rounded-lg cursor-pointer'>
+        <div className=' h-[474px] w-[550px] bg-white rounded-lg'>
             <h2 className=' w-full flex items-center justify-center text-xl font-semibold uppercase rounded-t-lg bg-black text-white h-10'>Divsion 2 - 1st xi</h2>
         <div className="h-16 w-full bg-gray-100 border border-gray-300 pt-4 px-4 text-lg font-semibold">
             <div className="flex items-center justify-between">
@@ -117,7 +125,7 @@ const Senior = () => {
             </div>
            
         </div>
-        <div className=" pb-2 w-full bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold">
+        <div className=" pb-2 w-full bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold cursor-pointer hover:bg-gray-400/20 transition-all duration-300">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <div>1</div>
@@ -131,7 +139,7 @@ const Senior = () => {
             </div>
            
         </div>
-        <div className="w-full pb-2 bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold">
+        <div className="w-full pb-2 bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold cursor-pointer hover:bg-gray-400/20 transition-all duration-300">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <div>2</div>
@@ -143,9 +151,8 @@ const Senior = () => {
                 </div>
                 <div>242</div>
             </div>
-           
         </div>
-        <div className=" pb-2 w-full bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold">
+        <div className=" pb-2 w-full bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold cursor-pointer hover:bg-gray-400/20 transition-all duration-300">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <div>3</div>
@@ -160,7 +167,7 @@ const Senior = () => {
             </div>
            
         </div>
-        <div className=" pb-2 w-full bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold">
+        <div className=" pb-2 w-full bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold cursor-pointer hover:bg-gray-400/20 transition-all duration-300">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <div>4</div>
@@ -176,7 +183,7 @@ const Senior = () => {
             </div>
            
         </div>
-        <div className=" pb-2 w-full bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold">
+        <div className=" pb-2 w-full bg-white border border-gray-300 pt-4 px-4 text-lg font-semibold cursor-pointer hover:bg-gray-400/20 transition-all duration-300">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <div>5</div>

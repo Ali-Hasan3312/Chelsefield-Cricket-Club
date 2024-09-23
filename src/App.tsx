@@ -12,6 +12,8 @@ import Teams from './pages/Teams'
 import { Stats } from './pages/Stats'
 import HallBooking from './components/HallBooking'
 import JoinUs from './components/JoinUs'
+import MatchDetails from './components/MatchDetails'
+import NotFound from './components/NotFound'
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <Route path='/stats' element={<Stats />} />
       <Route path='/hall' element={<HallBooking />} />
       <Route path='/join' element={<JoinUs />} />
+      <Route path='/match-details' element={<MatchDetails />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
    </Router>

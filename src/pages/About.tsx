@@ -5,6 +5,7 @@ import { HiUsers } from "react-icons/hi2";
 import { FaHeart } from "react-icons/fa";
 import CrossImage from "../assets/Untitled_design__2_-removebg-preview.png"
 import Our_Squad from "../assets/Our_Squad.jpg"
+import aboutImage from "../assets/AboutImage.jpg"
 const About = () => {
   return (
     <>
@@ -27,12 +28,15 @@ const About = () => {
           <img className=" absolute top-0 left-0 w-full h-full object-cover z-0" src={Our_Squad} alt="" />
         </div>
        </div>
-       <div className="font-semibold w-[85%] mt-16 mx-auto flex justify-between">
-        <h3 className="uppercase text-blue-500">Our Mission</h3>
-        <div className=" w-[70%] text-white">
+       <div className="font-semibold w-[90%] mt-16 flex justify-between">
+        <h3 className="uppercase text-blue-500 text-nowrap ml-16">Our Mission</h3>
+       <div className="flex gap-8 mt-16 -ml-[8%]">
+        <img className="h-[500px] w-[450px] object-cover" src={aboutImage} alt="" />
+       <div className=" w-[70%] text-white">
           <p className=" text-[50px]">At Undefeated, our mission is clear: to empower individuals to push beyond their limits, unlock their full potential, and achieve excellence in every aspect of life.</p>
           <span className=" font-normal text-lg">Through our platform, we aim to cultivate a culture of resilience, determination, and sportsmanship, instilling the belief that with dedication and perseverance, anything is possible.</span>
         </div>
+       </div>
        </div>
        <div className="flex items-center justify-center gap-8 mt-20 relative">
        <img className="absolute -top-40 -left-[290px] w-[980px] h-[520px] z-0" src={CrossImage} alt="" />

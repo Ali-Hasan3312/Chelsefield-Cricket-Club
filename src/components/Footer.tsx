@@ -20,10 +20,10 @@ const Footer = () => {
         </div>
             <div className="text-white flex flex-col mt-2 gap-1">
             <span>Master Park</span>
-            <span>Oxted</span>
+            <span>Chelsefield</span>
             <span>Surrey</span>
             <span>RH8 9NA</span>
-            <span>Tel: 01883 712792</span>
+            <span>Tel: +1 (291) 939 9321</span>
             <Link className=" uppercase text-lg" to={""}>View With Google Maps</Link>
         </div>
             <div className=" text-white text-3xl mt-4 flex flex-col items-center gap-8">
