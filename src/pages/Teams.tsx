@@ -42,15 +42,15 @@ const Teams = () => {
         <div className=' bg-gray-950 pb-8'>
        <div className='bg2 relative'></div>
        <div className=' absolute top-[40%] left-[20%] text-white w-[60%] mx-auto'>
-           <h1 className=' text-[60px] font-bold uppercase leading-[1] text-center'>Our Teams</h1>
+           <h1 className=' text-[60px] max-sm:text-[40px] max-sm:text-nowrap font-bold uppercase leading-[1] text-center'>Our Teams</h1>
        </div>
            <div className="relative pb-12 w-[90%] bg-gray-800 mt-8 mx-auto">
-           <div className="flex items-center justify-between px-8 text-white pt-12">
+           <div className="flex max-sm:flex-col items-center justify-between px-8 text-white pt-12">
            <h1 className=" text-4xl">Our Squad</h1>
-            <p className=" w-[40%] text-lg">
+            <p className=" w-[40%] max-sm:w-[90%] max-sm:mt-4 text-lg">
             Behind Undefeated stands a dedicated team of individuals who are passionate about sports, motivation, and making a positive impact. Meet the faces driving our mission forward.</p>
            </div>
-           <div className="grid grid-cols-3 w-[90%] mx-auto mt-12 gap-8">
+           <div className="grid grid-cols-3 max-sm:grid-cols-1 w-[90%] mx-auto mt-12 gap-8">
            <Players playerName="Hogan Techaira" role="Opening Batsman" image={player1} />
            <Players playerName="Samuel Hughes" role="Opening Batsman" image={player2} />
            <Players playerName="Daniel Hill" role="Middle-order Batsman" image={player3} />

@@ -19,7 +19,6 @@ const Senior = () => {
                     <img className=' h-24 w-32 object-cover' src={logo} alt="" />
                     <span>Chelsefield</span>
                 </div>
-              
                </div>
                 <span className=' font-semibold uppercase'>Saturday 1st XI
                 </span>
@@ -38,7 +37,7 @@ const Senior = () => {
             <span className=' h-8 p-2 w-48 text-nowrap bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Division 2 - 2nd xi</span>
             <span className=' font-medium text-gray-600'>7 Sep</span>
            </div>
-        <div className='flex items-center justify-between px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
+        <div className='flex items-center relative justify-between px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
             <div className=' flex flex-col items-center gap-8'>
                <div className="">
                <div className=' flex items-center font-semibold uppercase'>
@@ -58,13 +57,14 @@ const Senior = () => {
                 <PiGreaterThanBold className=' text-xl text-gray-600 ml-20' />
                 <span className=" h-12 w-20 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">166</span>
             </div>
+            <Link className=" absolute top-0 left-0 h-full w-full" to={"/match-details"}></Link>
         </div>
         <hr className=" mt-4" />
         <div className=' mt-4 flex items-center justify-between px-4'>
             <span className=' h-8 p-2 w-48 text-nowrap bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Division 3 East</span>
             <span className=' font-medium text-gray-600'>7 Sep</span>
            </div>
-        <div className='flex items-center justify-between px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
+        <div className='flex items-center relative justify-between px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
             <div className=' flex flex-col items-center gap-8'>
                <div className="">
                <div className=' flex items-center font-semibold uppercase'>
@@ -82,6 +82,7 @@ const Senior = () => {
                 <PiGreaterThanBold className=' text-xl text-gray-600 ml-20' />
                 <span className=" h-12 w-20 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">178/4</span>
             </div>
+            <Link className=" absolute top-0 left-0 h-full w-full" to={"/match-details"}></Link>
         </div>
         
         </div>

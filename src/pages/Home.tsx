@@ -13,7 +13,7 @@ const Home = () => {
  
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div>
+      <div className=' w-full overflow-x-hidden'>
         
         <HeroSection />
         <AboutClub />

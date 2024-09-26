@@ -10,8 +10,8 @@ export const Stats = () => {
             <span>Statistics</span>
         </div>
         <hr />
-         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider  text-white">All Statistics</h1>
-         <select className=" w-[90%] h-12 mt-8 ml-[5%] rounded-sm outline-none">
+         <h1 className="text-2xl uppercase font-semibold text-center pt-4 tracking-wider  text-white">All Statistics</h1>
+         <select className=" w-[43%] h-12 mt-8 ml-[5%] px-4 rounded-sm outline-none">
             <option value="">2024 Season</option>
             <option value="">2023 Season</option>
             <option value="">2022 Season</option>

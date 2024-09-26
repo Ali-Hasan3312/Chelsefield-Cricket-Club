@@ -24,7 +24,9 @@ const About = () => {
        <div className=" relative">
           {/* <img className="absolute -top-14 right-28 w-[200px] h-[200px] z-20" src="https://cdn.prod.website-files.com/65c1fc011cb990c0c2ad742e/65d8a02165081422cd242ade_Union%20(1).png" alt="" /> */}
        <div className="relative w-full h-[500px] overflow-hidden mt-8">
-          <div className="background-overlay absolute top-0 left-0 w-1/2 h-full clip-diagonal z-10 bg-blue-500"></div>
+          <div className="background-overlay absolute top-0 left-0 w-1/2 h-full clip-diagonal z-10 bg-blue-500">
+          <h2 className=" w-[80%] text-white mt-4 ml-4 text-xl">The Club supports exists to provide access to cricket for all and we have created a family-orientated environment in which all players feel supported and valued as members.</h2>
+          </div>
           <img className=" absolute top-0 left-0 w-full h-full object-cover z-0" src={Our_Squad} alt="" />
         </div>
        </div>

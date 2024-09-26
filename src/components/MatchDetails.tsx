@@ -1,19 +1,17 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaShieldHalved } from "react-icons/fa6";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/Chelsefield_blue-removebg-preview.png";
 import OverviewDetails from "./OverviewDetails";
-
 const MatchDetails = () => {
-    const location = useLocation()
+   
      const [isHovered, setIsHovered] = useState(false);
   return (
     <div className=" mt-4">
-         <div className=' bg-black w-full px-4 flex items-center justify-between text-white'>
+         <div className=' bg-black w-full px-12 flex items-center justify-between text-white'>
             <div className="flex items-center text-2xl gap-4">
-                <FaShieldHalved className=" text-[50px]" />
-                <span>Limpsfield Chart</span>
+            <img className='h-20 w-28 object-cover' src={logo} alt="" />
+                <span>Chelsefield</span>
             </div>
             <div className="flex flex-col gap-6">
                 <p>Sun 22 Sep 2024</p>
@@ -41,7 +39,6 @@ const MatchDetails = () => {
             </div>
             <div className="flex items-center text-2xl gap-4">
                 <span>Saturday 1st XI</span>
-            <img className='h-20 w-28 object-cover' src={logo} alt="" />
             </div>
             </div>
           <OverviewDetails />

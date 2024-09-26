@@ -3,7 +3,7 @@ const ClubContacts = () => {
   return (
     <div className='w-full bg-white pt-8'>
         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Key club contacts</h1>
-        <div className="grid grid-cols-4 w-[70%] gap-4 mx-auto mt-8">
+        <div className="grid grid-cols-4 max-sm:grid-cols-1 w-[70%] max-sm:w-[55%] gap-4 mx-auto mt-8">
          <div className="w-[200px] h-auto">
             <img className=" w-full h-[244px] object-cover hover:opacity-70 transition-all duration-300" src="https://www.dartfordcc.co.uk/wp-content/uploads/2024/05/Neil-Wilson_resized.png" alt="" />
             <p className="uppercase font-medium text-sm text-center mt-4">President - Neil Wilson</p>

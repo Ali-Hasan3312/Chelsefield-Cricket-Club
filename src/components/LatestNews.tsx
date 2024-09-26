@@ -7,7 +7,7 @@ const LatestNews = () => {
         <div className=" w-[80%] bg-white  mx-auto mt-8">
             <hr />
             <div>
-                <div className="flex mt-4 gap-4">
+                <div className="flex max-sm:flex-col mt-4 gap-4">
                     <img className=" h-[180px] w-[440px] object-cover" src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNyaWNrZXR8ZW58MHx8MHx8fDA%3D" alt="" />
                     <div className="flex flex-col gap-4">
                         <Link className=" text-sm hover:underline uppercase" to={"/latestNews"}>Latest News</Link>
@@ -18,7 +18,7 @@ const LatestNews = () => {
             </div>
             <div className=" mt-4">
             <hr />
-                <div className="flex mt-4 gap-4">
+                <div className="flex max-sm:flex-col mt-4 gap-4">
                     <img className=" h-[180px] w-[500px] object-cover" src="https://plus.unsplash.com/premium_photo-1679690884144-1f43b8f3bf41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNyaWNrZXR8ZW58MHx8MHx8fDA%3D" alt="" />
                     <div className="flex flex-col gap-4">
                         <Link className=" text-sm hover:underline uppercase" to={"/latestNews"}>Latest News</Link>
@@ -29,7 +29,7 @@ const LatestNews = () => {
             </div>
             <div className=" mt-4">
             <hr />
-                <div className="flex mt-4 gap-4">
+                <div className="flex max-sm:flex-col mt-4 gap-4">
                     <img className=" h-[180px] w-[524px] object-cover" src="https://plus.unsplash.com/premium_photo-1661890079209-72b76e49768f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3JpY2tldHxlbnwwfHwwfHx8MA%3D%3D" alt="" />
                     <div className="flex flex-col gap-4">
                         <Link className=" text-sm hover:underline uppercase" to={"/latestNews"}>Latest News</Link>
