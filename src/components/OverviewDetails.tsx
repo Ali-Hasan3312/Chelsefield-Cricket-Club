@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import chelsefieldMap from "../assets/Chelsefield_Map.jpg";
 const OverviewDetails = () => {
   return (
-    <div className=" w-full bg-gray-200 flex gap-12 justify-center py-8 px-12">
+    <div className=" w-full bg-gray-200 flex max-sm:flex-col max-sm:items-center gap-12 justify-center py-8 px-12">
     <div className="flex flex-col gap-4">
     <div className="flex items-center gap-4">
         <FaLocationDot className=" text-2xl text-blue-900" />

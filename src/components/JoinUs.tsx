@@ -19,7 +19,7 @@ const JoinUs = () => {
         </div>
         <hr />
        
-        <div className='flex gap-2 px-8'>
+        <div className='flex gap-2 px-8 max-sm:flex-col'>
         <form className=" mt-10 w-[90%] mx-auto bg-white rounded px-12 py-8 text-black" >
         <h2 className=' text-center text-3xl font-semibold'>Join Chelsefield Cricket Club</h2>
         <div className=' w-full border border-blue-500 bg-sky-500/10 py-4 px-8 flex flex-col mt-4'>
@@ -32,7 +32,7 @@ const JoinUs = () => {
           </div>
         </div>
                     <div className=" flex flex-col gap-4 mt-6">
-                     <div className='grid grid-cols-2 gap-4'>
+                     <div className='grid grid-cols-2 gap-4 max-sm:grid-cols-1'>
                      <div>
                         <label htmlFor="name">Full Name:
                         </label>
@@ -65,7 +65,7 @@ const JoinUs = () => {
                       
                         <span className=" text-xl font-semibold mt-8">Emergency Contact Details
                         </span>
-                    <div className='grid grid-cols-2 gap-4'>
+                    <div className='grid grid-cols-2 gap-4 max-sm:grid-cols-1'>
                     <div>
                        <label className=" mt-8">Emergency Contact Name:
                         </label>
