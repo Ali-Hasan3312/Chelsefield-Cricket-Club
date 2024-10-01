@@ -23,7 +23,7 @@ const Footer = () => {
             <span>Chelsefield</span>
             <span>Surrey</span>
             <span>RH8 9NA</span>
-            <span>Tel: +1 (291) 939 9321</span>
+            <span>Tel: 07572-427856</span>
             <Link className=" uppercase text-lg" to={""}>View With Google Maps</Link>
         </div>
         </div>
@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
         </div>
         </div>
-       <div className="flex items-center mt-4 justify-center w-full h-16 bg-zinc-800">
+       <div className="flex max-sm:flex-col max-sm:text-sm items-center mt-4 justify-center w-full h-16 bg-zinc-800">
        <div>
             <p className=" text-white text-center">© 2024 Chelsefield Cricket Club. All Rights Reserved.</p>
         </div>

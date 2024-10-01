@@ -35,7 +35,7 @@ const HallBooking = () => {
             <span>Hire Hall</span>
         </div>
         <hr />
-        <div className=" text-white w-[80%] mx-auto mt-4">
+        <div className=" text-white w-[80%] max-sm:w-[90%] mx-auto mt-4">
             <p>
             Our Hall room is available to hire throughout the week and is ideal for birthday parties, engagement parties, wedding receptions and those special occasions.</p>
             <p>The hall room comes with its own fully-licensed bar and you are welcome to bring your own catering and music (either DJ or live band).</p>
@@ -57,11 +57,11 @@ const HallBooking = () => {
               <form>
               <div className=" mt-8">
                 <h1 className=" text-2xl font-semibold text-center">Contact Us</h1>
-                <div className=" h-[600px] grid grid-cols-[70%_30%] w-[80%] mx-auto shadow-lg mt-4">
+                <div className=" h-[600px] max-sm:h-[500px] grid grid-cols-[70%_30%] max-sm:grid-cols-[60%_40%] w-[80%] max-sm:w-[95%] mx-auto shadow-lg mt-4">
         <div className=" bg-white">
-            <div className=" w-[80%] mx-auto mt-8">
+            <div className=" w-[80%] max-sm:w-[90%] mx-auto mt-8">
             <h1 className=" text-lg font-medium">Send Us A Message</h1>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 max-sm:grid-cols-1">
                 <div className="h-[100px] w-[280px] mt-4">
                     <label className=" text-gray-400">Name *</label>
                     <input type="text" className=" h-[30px] w-full border-b-[1px] outline-none focus:border-black mt-2 placeholder:text-gray-600" placeholder="Your name" />
@@ -86,27 +86,28 @@ const HallBooking = () => {
         </div>
         <div className=" bg-blue-900">
             <div className=" w-[80%] mx-auto text-gray-400 flex flex-col gap-4 mt-8">
-            <h1 className=" text-xl text-white">Contact Information</h1>
+            <h1 className=" text-xl text-white max-sm:text-lg">Contact Information</h1>
             <p>We will be happy to help with any questions you might have about the Club or hiring our facilities!</p>
-            <div className="flex items-start gap-4 mt-8">
+            <div className="flex items-start gap-4 mt-8 max-sm:mt-4">
                 <FaLocationDot className=" text-white text-xl" />
                 <p>Pilgrims Way, Chelsefield, Kent, DA1 1QZ</p>
             </div>
-            <div className="flex items-start gap-4 mt-8">
+            <div className="flex items-start gap-4 mt-8 max-sm:mt-4">
                 <IoCall className=" text-white text-xl" />
                 <p>+1 (291) 939 9321</p>
             </div>
-            <div className="flex items-start gap-4 mt-8">
-                <IoMdMail className=" text-white text-xl" />
-                <p>info@chelsefield.com</p>
+            <div className="flex items-start max-sm:flex-wrap gap-4 mt-8 max-sm:mt-4 ">
+                <IoMdMail className=" text-white text-xl max-sm:text-sm" />
+                <p className=" max-sm:text-[12px] max-sm:text-wrap">info@chelsefield.com</p>
             </div>
+            <div className=" max-sm:mt-4"></div>
             </div>
         </div>
         </div>
               </div>
               </form>
         </div>
-        
+        <div className=" max-sm:mt-44"></div>
     </div>
   )
 }

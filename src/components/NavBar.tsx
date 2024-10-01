@@ -31,7 +31,7 @@ const NavBar = () => {
     <div className="h-24 max-sm:h-20 w-full overflow-hidden max-sm:px-2 bg-white flex items-center justify-between gap-8 px-2">
       <div className="uppercase relative text-lg text-lime-400 font-semibold ml-4">
         <img
-          className="h-[110px] min-w-[7rem] max-sm:h-14 max-sm:w-[280px] object-cover"
+          className="h-[110px] min-w-[7rem] max-sm:h-14 max-sm:w-[280px] max-sm:-ml-8 object-cover"
           src={logo}
           alt=""
         />
@@ -99,7 +99,7 @@ const NavBar = () => {
           </div>
         )}
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 max-sm:mr-6">
         <Link
           to={"/join"}
           className="h-12 w-24 max-sm:h-10 max-sm:w-16 max-sm:text-sm rounded-lg bg-white flex items-center justify-center font-semibold hover:bg-blue-500 text-blue-500 border border-blue-500 hover:text-white transition-all duration-300"
@@ -116,7 +116,7 @@ const NavBar = () => {
             <button
               id="hamburger"
               onClick={() => setIsOpen(false)}
-              className="grid place-items-center h-12 w-12 border-none outline-none cursor-pointer text-blue-500 bg-opacity-100 absolute -top-6 -left-8 text-3xl bg-inherit rounded-full z-[9]"
+              className="grid place-items-center h-12 w-12 border-none outline-none cursor-pointer text-blue-500 bg-opacity-100 absolute -top-6 -left-12 text-3xl bg-inherit rounded-full z-[9]"
             >
               <IoClose />
             </button>
@@ -127,7 +127,7 @@ const NavBar = () => {
                 e.stopPropagation();
                 setIsOpen(true);
               }}
-              className="grid px-2 place-items-center h-12 w-12 border-none outline-none cursor-pointer text-blue-500 bg-opacity-100 absolute -top-6 -left-8 text-3xl bg-inherit rounded-full z-[9]"
+              className="grid px-2 place-items-center h-12 w-12 border-none outline-none cursor-pointer text-blue-500 bg-opacity-100 absolute -top-6 -left-12 text-3xl bg-inherit rounded-full z-[9]"
             >
               <HiMenuAlt4 />
             </button>

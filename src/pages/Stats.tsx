@@ -11,7 +11,7 @@ export const Stats = () => {
         </div>
         <hr />
          <h1 className="text-2xl uppercase font-semibold text-center pt-4 tracking-wider  text-white">All Statistics</h1>
-         <select className=" w-[43%] h-12 mt-8 ml-[5%] px-4 rounded-sm outline-none">
+         <select className=" w-[43%] max-sm:w-[90%] h-12 mt-8 ml-[5%] px-4 rounded-sm outline-none">
             <option value="">2024 Season</option>
             <option value="">2023 Season</option>
             <option value="">2022 Season</option>
@@ -23,8 +23,8 @@ export const Stats = () => {
             <option value="">2016 Season</option>
             <option value="">2015 Season</option>
          </select>
-         <div className=" w-[90%] flex items-center gap-12 mx-auto mt-8">
-         <div className=" h-[220px] w-[49%] rounded-sm bg-white pt-8">
+         <div className=" w-[90%] flex items-center max-sm:flex-col gap-12 mx-auto mt-8">
+         <div className=" h-[220px] w-[49%] max-sm:w-full rounded-sm bg-white pt-8">
          <div className="flex items-center justify-center gap-12">
            <div className=" flex flex-col items-center gap-2 mt-1 text-lg">
            <span className=" font-semibold text-2xl">16</span>
@@ -49,7 +49,7 @@ export const Stats = () => {
             <div className=" h-3  w-[18.75%] bg-red-500 rounded-r-lg"></div>
           </div>
          </div>
-         <div className=" h-[220px] w-[49%] rounded-sm bg-white pt-8">
+         <div className=" h-[220px] w-[49%] max-sm:w-full rounded-sm bg-white pt-8">
         <h2 className=" text-base font-semibold text-center uppercase mt-8">Average Per Game</h2>
         <div className="flex items-center justify-between w-[60%] mx-auto mt-4">
             <div className=" font-bold flex flex-col items-center ">

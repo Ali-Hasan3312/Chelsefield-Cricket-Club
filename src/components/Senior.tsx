@@ -1,18 +1,18 @@
 import { PiGreaterThanBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 import logo from "../assets/Chelsefield_blue-removebg-preview.png";
 import resultsImage2 from "../assets/matchResults2.jpg";
-import { Link } from "react-router-dom";
 const Senior = () => {
   return (
     <div className='mt-4'>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:gap-4">
         <div className='pb-4 w-[90%] mx-auto bg-white rounded-lg'>
             <h2 className=' w-full flex items-center justify-center text-xl font-semibold uppercase rounded-t-lg bg-black text-white h-10'>Recent results</h2>
            <div className=' mt-4 flex items-center justify-between px-4'>
             <span className=' h-8 p-2 w-48 text-nowrap bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Cancelled - Friendly</span>
             <span className=' font-medium text-gray-600'>14 Sep</span>
            </div>
-        <div className='flex items-center justify-between relative px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
+        <div className='flex items-center justify-between relative px-8 max-sm:px-2 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
             <div className=' flex flex-col items-center gap-8'>
                <div className="">
                <div className=' flex items-center font-semibold uppercase'>
@@ -26,9 +26,9 @@ const Senior = () => {
                 </p>
             </div>
             <div className="flex flex-col items-center gap-4 text-white">
-                <span className=" h-12 w-14 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">P</span>
+                <span className=" h-12 w-14 max-sm:h-8 max-sm:w-10 max-sm:text-lg text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">P</span>
                 <PiGreaterThanBold className=' text-xl text-gray-600 ml-20' />
-                <span className=" h-12 w-14 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">P</span>
+                <span className=" h-12 w-14 max-sm:h-8 max-sm:w-10 max-sm:text-lg text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">P</span>
             </div>
             <Link className=" absolute top-0 left-0 h-full w-full" to={"/match-details"}></Link>
         </div>
@@ -37,7 +37,7 @@ const Senior = () => {
             <span className=' h-8 p-2 w-48 text-nowrap bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Division 2 - 2nd xi</span>
             <span className=' font-medium text-gray-600'>7 Sep</span>
            </div>
-        <div className='flex items-center relative justify-between px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
+        <div className='flex items-center relative justify-between px-8 max-sm:px-2 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
             <div className=' flex flex-col items-center gap-8'>
                <div className="">
                <div className=' flex items-center font-semibold uppercase'>
@@ -53,9 +53,9 @@ const Senior = () => {
                 
             </div>
             <div className="flex flex-col items-center gap-4 text-white">
-                <span className=" h-12 w-20 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">220</span>
+                <span className=" h-12 w-20 max-sm:h-8 max-sm:w-16 max-sm:text-lg text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">220</span>
                 <PiGreaterThanBold className=' text-xl text-gray-600 ml-20' />
-                <span className=" h-12 w-20 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">166</span>
+                <span className=" h-12 w-20 max-sm:h-8 max-sm:w-16 max-sm:text-lg text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">166</span>
             </div>
             <Link className=" absolute top-0 left-0 h-full w-full" to={"/match-details"}></Link>
         </div>
@@ -64,7 +64,7 @@ const Senior = () => {
             <span className=' h-8 p-2 w-48 text-nowrap bg-green-300/40 uppercase flex items-center justify-center font-semibold text-green-800'>Division 3 East</span>
             <span className=' font-medium text-gray-600'>7 Sep</span>
            </div>
-        <div className='flex items-center relative justify-between px-8 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
+        <div className='flex items-center relative justify-between px-8 max-sm:px-2 mt-4 cursor-pointer hover:bg-gray-400/20 transition-all duration-300'>
             <div className=' flex flex-col items-center gap-8'>
                <div className="">
                <div className=' flex items-center font-semibold uppercase'>
@@ -78,13 +78,12 @@ const Senior = () => {
                 </p>
             </div>
             <div className="flex flex-col items-center gap-4 text-white">
-                <span className=" h-12 w-20 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">177</span>
+                <span className=" h-12 w-20 max-sm:h-8 max-sm:w-16 max-sm:text-lg text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">177</span>
                 <PiGreaterThanBold className=' text-xl text-gray-600 ml-20' />
-                <span className=" h-12 w-20 text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">178/4</span>
+                <span className=" h-12 w-20 max-sm:h-8 max-sm:w-16 max-sm:text-lg text-2xl font-semibold flex items-center rounded-lg justify-center bg-black">178/4</span>
             </div>
             <Link className=" absolute top-0 left-0 h-full w-full" to={"/match-details"}></Link>
         </div>
-        
         </div>
         <div>
 
@@ -113,8 +112,8 @@ const Senior = () => {
         </div>
         </div>
         <div className=" h-12 w-52 mx-auto flex items-center justify-center mt-8 cursor-pointer text-lg font-bold uppercase rounded-[2rem] bg-white">View All Matches</div>
-        <div className="flex items-start justify-center gap-8 mt-8">
-        <div className=' h-[474px] w-[550px] bg-white rounded-lg'>
+        <div className="flex items-start justify-center gap-8 mt-8 max-sm:flex-col">
+        <div className=' h-[474px] w-[550px] max-sm:w-[380px] max-sm:mx-auto bg-white rounded-lg'>
             <h2 className=' w-full flex items-center justify-center text-xl font-semibold uppercase rounded-t-lg bg-black text-white h-10'>Divsion 2 - 1st xi</h2>
         <div className="h-16 w-full bg-gray-100 border border-gray-300 pt-4 px-4 text-lg font-semibold">
             <div className="flex items-center justify-between">
@@ -199,7 +198,7 @@ const Senior = () => {
         </div>
         <div className=" py-3 w-52 mx-auto mt-4 flex items-center justify-center cursor-pointer text-lg font-bold uppercase rounded-[2rem] bg-white">View Full Table</div>
         </div>
-        <div className='h-[472px] w-[550px] bg-white rounded-t-lg cursor-pointer'>
+        <div className='h-[472px] w-[550px] max-sm:w-[380px] max-sm:mx-auto bg-white rounded-t-lg cursor-pointer max-sm:mt-16'>
            <div>
            <h2 className=' w-full flex items-center justify-center text-xl font-semibold uppercase rounded-t-lg bg-black text-white h-10'>1st xi - 2024 Season</h2>
            <h3 className=" text-center font-semibold mt-4 text-xl">Matches Summary</h3>

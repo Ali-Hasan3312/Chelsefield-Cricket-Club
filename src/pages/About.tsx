@@ -16,8 +16,8 @@ const About = () => {
             <span>About Us</span>
         </div>
         <hr />
-        <div className="text-white mt-12 ml-16 w-[90%] flex flex-col gap-8">
-          <h1 className=" font-semibold text-[90px] leading-[1.1]">Where sports, motivation, and community unite to inspire greatness.</h1>
+        <div className="text-white mt-12 ml-16 max-sm:ml-8 w-[90%] flex flex-col gap-8">
+          <h1 className=" font-semibold text-[90px] max-sm:text-[40px] leading-[1.1]">Where sports, motivation, and community unite to inspire greatness.</h1>
           <p className=" text-lg">Undefeated is your ultimate destination for sports enthusiasts and motivation seekers alike. Dive into a world <br /> where passion meets inspiration, empowering you to push boundaries, overcome challenges, and achieve <br /> greatness.</p>
           <Link to={"/touch"} className=" h-12 w-32 flex items-center justify-center bg-blue-500 text-white font-semibold hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500 transition-all duration-300">Contact Us</Link>
         </div>
@@ -25,22 +25,22 @@ const About = () => {
           {/* <img className="absolute -top-14 right-28 w-[200px] h-[200px] z-20" src="https://cdn.prod.website-files.com/65c1fc011cb990c0c2ad742e/65d8a02165081422cd242ade_Union%20(1).png" alt="" /> */}
        <div className="relative w-full h-[500px] overflow-hidden mt-8">
           <div className="background-overlay absolute top-0 left-0 w-1/2 h-full clip-diagonal z-10 bg-blue-500">
-          <h2 className=" w-[80%] text-white mt-4 ml-4 text-xl">The Club supports exists to provide access to cricket for all and we have created a family-orientated environment in which all players feel supported and valued as members.</h2>
+          <h2 className=" w-[80%] text-white mt-4 ml-4 text-xl max-sm:text-sm max-sm:ml-2">The Club supports exists to provide access to cricket for all and we have created a family-orientated environment in which all players feel supported and valued as members.</h2>
           </div>
           <img className=" absolute top-0 left-0 w-full h-full object-cover z-0" src={Our_Squad} alt="" />
         </div>
        </div>
        <div className="font-semibold w-[90%] mt-16 flex justify-between">
-        <h3 className="uppercase text-blue-500 text-nowrap ml-16">Our Mission</h3>
-       <div className="flex gap-8 mt-16 -ml-[8%]">
+        <h3 className="uppercase text-blue-500 text-nowrap ml-16 max-sm:ml-4">Our Mission</h3>
+       <div className="flex gap-8 mt-16 -ml-[8%] max-sm:-ml-[24%] max-sm:flex-col">
         <img className="h-[500px] w-[450px] object-cover" src={aboutImage} alt="" />
        <div className=" w-[70%] text-white">
-          <p className=" text-[50px]">At Undefeated, our mission is clear: to empower individuals to push beyond their limits, unlock their full potential, and achieve excellence in every aspect of life.</p>
+          <p className=" text-[50px] max-sm:text-[20px]">At Undefeated, our mission is clear: to empower individuals to push beyond their limits, unlock their full potential, and achieve excellence in every aspect of life.</p>
           <span className=" font-normal text-lg">Through our platform, we aim to cultivate a culture of resilience, determination, and sportsmanship, instilling the belief that with dedication and perseverance, anything is possible.</span>
         </div>
        </div>
        </div>
-       <div className="flex items-center justify-center gap-8 mt-20 relative">
+       <div className="flex items-center justify-center max-sm:flex-col gap-8 mt-20 relative">
        <img className="absolute -top-40 -left-[290px] w-[980px] h-[520px] z-0" src={CrossImage} alt="" />
        <div className=" h-[330px] w-[380px] bg-customBlack z-10">
         <GiBleedingEye className=" text-blue-500 text-[50px] ml-8 mt-8" />

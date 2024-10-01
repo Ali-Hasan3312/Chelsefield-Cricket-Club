@@ -5,7 +5,7 @@ const AboutClub = () => {
   return (
     <div className=' w-full bg-white pt-8'>
         <h1 className=" text-2xl max-sm:text-lg uppercase font-semibold text-center pt-4 tracking-wider">Find out more about the club</h1>
-        <div className="grid grid-cols-3 max-sm:grid-cols-1 ml-[3.4%] mt-8">
+        <div className="grid grid-cols-3 max-sm:grid-cols-1 ml-[3.4%] max-sm:ml-[8%] mt-8">
             <div className="h-[400px] w-[390px] max-sm:w-[340px] text-sm">
                 <img className=" w-full h-[280px] object-cover" src={junior} alt="" />
                 <Link to={'/teams'} className="font-semibold text-lg flex justify-center mt-2 hover:underline">Our Teams</Link>
