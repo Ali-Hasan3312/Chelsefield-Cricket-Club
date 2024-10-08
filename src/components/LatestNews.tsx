@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import ManOfMatch from "../assets/News/Man of the match.jpg"
 const LatestNews = () => {
   return (
     <div className=" w-full bg-white">
@@ -8,11 +8,11 @@ const LatestNews = () => {
             <hr />
             <div>
                 <div className="flex max-sm:flex-col mt-4 gap-4">
-                    <img className=" h-[180px] w-[440px] object-cover" src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNyaWNrZXR8ZW58MHx8MHx8fDA%3D" alt="" />
+                    <img className=" h-[180px] w-[415px] object-cover" src={ManOfMatch} alt="" />
                     <div className="flex flex-col gap-4">
                         <Link className=" text-sm hover:underline uppercase" to={"/latestNews"}>Latest News</Link>
-                        <Link className=" text-lg font-medium hover:underline" to={"sam-walker-memorial-match-update"}>Sam Walker memorial match update</Link>
-                        <p className=" text-sm">Tickets for the lunch portion of the day have now SOLD OUT! We’ve had incredible interest in the day and we’d like to thank everyone who has bought a ticket…</p>
+                        <Link className=" text-lg font-medium hover:underline" to={"sam-walker-memorial-match-update"}>Man of the Match</Link>
+                        <p className=" text-sm">Congratulations to our Man of the Match for the Sam Memorial Match! The outstanding performance on the field helped secure a memorable victory.</p>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ const LatestNews = () => {
                 </div>
             </div>
             <hr className=" mt-4" />
-            <Link to={"/news"} className=" uppercase h-8 mt-4 w-32 mx-auto text-xs border border-black flex items-center justify-center hover:bg-lime-400 hover:text-white hover:border-none transition-all duration-300">See All Club News</Link>
+            {/* <Link to={"/news"} className=" uppercase h-8 mt-4 w-32 mx-auto text-xs border border-black flex items-center justify-center hover:bg-lime-400 hover:text-white hover:border-none transition-all duration-300">See All Club News</Link> */}
         </div>
     </div>
   )

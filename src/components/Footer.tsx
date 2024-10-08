@@ -19,16 +19,18 @@ const Footer = () => {
             <span className="text-lg font-semibold text-nowrap">Chelsfield Cricket Club</span>
         </div>
             <div className="text-white flex flex-col mt-2 gap-1">
-            <span>Master Park</span>
+            <span className=" uppercase font-semibold">The Club House</span>
+            <span>Bucks Cross Road</span>
             <span>Chelsefield</span>
-            <span>Surrey</span>
-            <span>RH8 9NA</span>
-            <span>Tel: 07572-427856</span>
-            <Link className=" uppercase text-lg" to={""}>View With Google Maps</Link>
+            <span>Orpington</span>
+            <span>Kent</span>
+            <span>BR6 7RN</span>
+            <span>Telephone: 07572-427856</span>
+            <Link className=" uppercase text-lg" to={"https://maps.google.co.uk/?q=51.35730299999999,0.1312346&z=19"}>View With Google Maps</Link>
         </div>
         </div>
         <div className=" h-48 w-[1px] bg-gray-300 max-sm:opacity-0 max-sm:-mt-[380px]"></div>
-        <div className="grid grid-cols-2 gap-14 max-sm:ml-2 -ml-6">
+        <div className="grid grid-cols-2 gap-8 max-sm:ml-2 -ml-6">
         <div className=" text-white">
             <h2 className=" text-xl font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Home</h2>
         </div>

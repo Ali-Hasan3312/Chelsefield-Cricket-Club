@@ -18,33 +18,33 @@ const Sponsors = () => {
             repeatType: "loop",
           }}
         className='flex items-center justify-center mt-20 gap-8 overflow-hidden'>
-                  <div className='relative w-[220px]'>
+                  <div className='relative w-[220px] max-sm:w-[800px]'>
                   <motion.img
-                    className='w-[220px] object-scale-down'
+                    className='w-full object-scale-down'
                     src={APS}
                     alt=""
                   />
                   <Link to={"https://weareaps.co.uk/"} className=' absolute top-0 w-full h-full'></Link>
                   </div>
-                 <div className='relative '>
+                 <div className='relative w-[400px] max-sm:w-[2000px]'>
                  <motion.img
-                    className='w-[520px] h-auto cursor-pointer object-cover'
+                    className='w-full max-sm:w-full h-auto cursor-pointer object-cover'
                     src={greenOlive}
                     alt=""
                   />
                   <Link to={"https://greenandolive.co.uk/"} className=' absolute top-0 w-full h-full'></Link>
                  </div>
-                  <div className='relative w-44'>
+                  <div className='relative w-32 max-sm:w-[800px]'>
                   <motion.img
-                    className='w-44 h-auto cursor-pointer object-cover'
+                    className='w-full max-sm:w-full h-auto cursor-pointer object-cover'
                     src={zedExotics}
                     alt=""
                   />
                  <Link to={"https://ratings.food.gov.uk/business/679375/zed-exotics-london"} className=' absolute top-0 w-full h-full'></Link>
                   </div>
-                  <div className='relative w-72'>
+                  <div className='relative w-72 max-sm:w-[2000px]'>
                   <motion.img
-                    className='w-72 cursor-pointer object-cover'
+                    className='w-full max-sm:w-full cursor-pointer object-cover'
                     src={fairvue}
                     alt=""
                   />

@@ -11,14 +11,14 @@
   
 }
 .bg2{
-  background-image: url("./assets/Our_Teams.png");
+  background-image: url("./assets/Our_Team.jpg");
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg3{
-  background-image: url("./assets/hireHall//lady.jpg");
+  background-image: url("./assets/hireHall/updated.jpg");
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,32 +66,58 @@
   background: #fff;
 }
 /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
 .loader {
   width: 50px;
   aspect-ratio: 1;
-  display: grid;
-  border: 4px solid #0000;
   border-radius: 50%;
-  border-color: #ccc #0000;
-  animation: l16 1s infinite linear;
+  border: 8px solid #514b82;
+  animation:
+    l20-1 0.8s infinite linear alternate,
+    l20-2 1.6s infinite linear;
 }
-.loader::before,
-.loader::after {    
-  content: "";
-  grid-area: 1/1;
-  margin: 2px;
-  border: inherit;
-  border-radius: 50%;
+@keyframes l20-1{
+   0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+   12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+   25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+   50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+   100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
 }
-.loader::before {
-  border-color: #0a3585 #0000;
-  animation: inherit; 
-  animation-duration: .5s;
-  animation-direction: reverse;
+@keyframes l20-2{ 
+  0%    {transform:scaleY(1)  rotate(0deg)}
+  49.99%{transform:scaleY(1)  rotate(135deg)}
+  50%   {transform:scaleY(-1) rotate(0deg)}
+  100%  {transform:scaleY(-1) rotate(-135deg)}
 }
-.loader::after {
-  margin: 8px;
+.bg3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust opacity */
+  z-index: 1;
 }
-@keyframes l16 { 
-  100%{transform: rotate(1turn)}
+.bg2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust opacity */
+  z-index: 1;
+}
+.bg3 h1 {
+  position: relative;
+  z-index: 2; /* Make sure text is above overlay */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for visibility */
+}
+.bg2 h1 {
+  position: relative;
+  z-index: 2; /* Make sure text is above overlay */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for visibility */
 }
