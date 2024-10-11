@@ -84,56 +84,68 @@ const NavBar = () => {
                 Teams
               </button>
               {isDropdownOpen && (
-              <div className="absolute mt-2 w-40 text-base py-4 bg-white shadow-md rounded-md z-50">
-              <ul className="flex flex-col gap-2 font-normal w-full">
-                <li className="">
+              <div className="absolute mt-2 text-base pt-4 bg-white shadow-md rounded-md z-50">
+              <ul className="flex flex-col font-normal w-full">
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
                   <Link
                     to="/teams/saturday1stxi"
-                    className="hover:bg-gray-100 transition-all ease-in-out duration-300 px-[20px] py-2"
+                    className="  w-full text-center py-2 px-4"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     Saturday 1st XI
                   </Link>
                 </li>
-                <li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
                   <Link
                     to="/teams/saturday2ndxi"
-                    className="hover:bg-gray-100 transition-all ease-in-out duration-300 px-[15px] py-2"
+                    className="  w-full text-center py-2 px-4"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                    Saturday 2nd XI
 
                   </Link>
                 </li>
-                <li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
                   <Link
                     to="/teams/saturday3rdxi"
-                    className="hover:bg-gray-100 transition-all ease-in-out duration-300 px-[16px] py-2"
+                   className="  w-full text-center py-2 px-4"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                    Saturday 3rd XI
 
                   </Link>
                 </li>
-                <li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
                   <Link
                     to="/teams/sundaytigers"
-                    className="hover:bg-gray-100 transition-all ease-in-out duration-300 px-[20px] py-2"
+                   className="  w-full text-center py-2 px-4"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                    Sunday Tigers
 
                   </Link>
                 </li>
-                <li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+
+                <Link
+                  to=""
+                className="  w-full text-center py-2 px-4"
+                  onClick={() => setIsDropdownOpen(false)}
+                >
+                Indoor League
+                </Link>
+                </li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+
                   <Link
                     to="/teams/t20"
-                    className="hover:bg-gray-100 transition-all ease-in-out duration-300 px-[64px] py-2"
+                    className="  w-full text-center py-2 px-4"
                     onClick={() => setIsDropdownOpen(false)}
                   >
-                   T20
+                   T20 Team
                   </Link>
                 </li>
+               
               </ul>
             </div>
               )}
@@ -172,7 +184,7 @@ const NavBar = () => {
               Statistics
             </Link>
             <Link
-              to={""}
+              to={"https://youtube.com/@chelsfieldcc-en8ru?si=htRWSKscg54teiXC"}
               className={`hover:text-blue-500 transition-all duration-300 ${
                 location.pathname === "/livestream" ? "text-blue-500" : ""
               }`}
@@ -239,8 +251,92 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/teams"} onClick={() => setIsOpen(false)}>
-              Teams
+          <button
+                className={`hover:text-blue-500 transition-all duration-300 ${
+                  location.pathname.includes("/teams") ? "text-blue-500" : ""
+                }`}
+                onClick={toggleDropdown}
+              >
+                Teams
+              </button>
+              {isDropdownOpen && (
+              <div className=" mt-2 w-40 pt-4 bg-white shadow-md rounded-md z-50">
+              <ul className="flex flex-col gap-2 font-normal w-full">
+              <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+
+                  <Link
+                    to="/teams/saturday1stxi"
+                    className="  w-full text-center py-2 px-4"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                    Saturday 1st XI
+                  </Link>
+                  <hr className="my-2" />
+                </li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+
+                  <Link
+                    to="/teams/saturday2ndxi"
+                    className="  w-full text-center py-2 px-4"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                   Saturday 2nd XI
+
+                  </Link>
+                  <hr className="my-2" />
+                </li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+
+                  <Link
+                    to="/teams/saturday3rdxi"
+                    className="  w-full text-center py-2 px-4"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                   Saturday 3rd XI
+
+                  </Link>
+                  <hr className="my-2" />
+                </li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+
+                  <Link
+                    to="/teams/sundaytigers"
+                    className="  w-full text-center py-2 px-4"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                   Sunday Tigers
+
+                  </Link>
+                  <hr className="my-2" />
+                </li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+
+                <Link
+                  to=""
+                className="  w-full text-center py-2 px-4"
+                  onClick={() => setIsDropdownOpen(false)}
+                >
+                Indoor League
+                </Link>
+                </li>
+                <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+
+                  <Link
+                    to="/teams/t20"
+                    className="  w-full text-center py-2 px-4"
+                    onClick={() => setIsDropdownOpen(false)}
+                  >
+                   T20 Team
+                  </Link>
+                
+                </li>
+              </ul>
+            </div>
+              )}
+          </li>
+          <li>
+            <Link to={"/gallery"} onClick={() => setIsOpen(false)}>
+              Our Gallery
             </Link>
           </li>
           <li>
@@ -262,6 +358,14 @@ const NavBar = () => {
               onClick={() => setIsOpen(false)}
             >
               Statistics
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={"https://youtube.com/@chelsfieldcc-en8ru?si=htRWSKscg54teiXC"}
+              onClick={() => setIsOpen(false)}
+            >
+              Live Stream
             </Link>
           </li>
           <li>

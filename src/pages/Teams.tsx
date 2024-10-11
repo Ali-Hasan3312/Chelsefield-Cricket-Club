@@ -25,13 +25,13 @@ interface TeamsProps {
           style={{ backgroundImage: `url(${teamImage1})` }}
         >
           <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
-            <h1 className="text-5xl font-bold text-white">{teamName}</h1>
+            <h1 className="md:text-[60px] text-[40px] font-bold text-white uppercase">{teamName}</h1>
           </div>
         </div>
   
         {/* Team Content */}
         <div className="flex flex-col items-center gap-8 max-sm:flex-col py-12">
-          <h1 className="text-4xl font-semibold text-white text-center">Meet the Team</h1>
+          <h1 className="text-3xl md:text-4xl font-semibold text-white text-center">Meet the Team</h1>
   
           {/* Captain Section */}
           <div className="flex w-[90%] max-sm:w-full mx-auto gap-8 max-sm:flex-col bg-gray-900 shadow-lg rounded-lg overflow-hidden">
@@ -41,25 +41,25 @@ interface TeamsProps {
               <img
                 src={captainImage}
                 alt={`${captainName}`}
-                className="w-full h-64 object-cover rounded-lg mb-4"
+                className="w-[300px] h-[300px] object-cover rounded-lg mb-2"
               />
-              <h2 className="text-3xl font-bold mb-4">{captainName}</h2>
-              <p className="text-lg">
+              <h2 className="md:text-3xl text-xl font-bold mb-2">{captainName}</h2>
+              <p className="md:text-lg text-sm">
                 {captainName} is the team captain, leading the squad with passion, dedication, and years
                 of experience. He plays a vital role in mentoring the team and bringing out the best in
                 every player. Under his leadership, the team has developed into a strong, competitive
                 unit.
               </p>
-              <p className="mt-4">
+              <p className="mt-4 md:text-lg text-sm">
                 The team, comprising players of diverse skill levels, shares a deep love for cricket.
                 We compete with enthusiasm, aiming for success in every match, whether it's a league
                 game or a friendly.
               </p>
               {/* Contact Details */}
               <div className="mt-4">
-                <h3 className="text-2xl font-semibold">Captain's Contact</h3>
-                <p>Email: <a href={`mailto:${captainEmail}`} className="text-blue-500">{captainEmail}</a></p>
-                <p>Phone: <a href={`tel:${captainPhone}`} className="text-blue-500">{captainPhone}</a></p>
+                <h3 className="md:text-3xl text-xl font-bold">Captain's Contact</h3>
+                <p className="text-sm md:text-base">Email: <a href={`mailto:${captainEmail}`} className="text-blue-500">{captainEmail}</a></p>
+                <p className="text-sm md:text-base">Phone: <a href={`tel:${captainPhone}`} className="text-blue-500">{captainPhone}</a></p>
               </div>
             </div>
             {/* Team Images */}

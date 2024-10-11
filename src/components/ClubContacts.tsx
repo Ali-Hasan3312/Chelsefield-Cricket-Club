@@ -29,13 +29,13 @@ const ClubContacts = () => {
     <div className='w-full bg-white pt-8'>
         <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Key club contacts</h1>
         <div className="grid grid-cols-4 max-sm:grid-cols-1 w-[80%] max-sm:w-[75%] gap-4 mx-auto mt-8">
-          <KeyClubContact name="Naeem Ahad" position="Chairman" email="ahadn@hotmail.com" number="+44 7572 427856" image={NaeemAhad} />
+          <KeyClubContact name="Naeem Ahad" position="Chairman" email="Naeem@chelsfieldcc.co.uk" number="+44 7572 427856" image={NaeemAhad} />
           <KeyClubContact name="
-        Mr. Asjad Mir" position="Hon. Treasurer" email="asjadazeem@hotmail.com" number="07984130132" image={Asjad2} />
+        Mr. Asjad Mir" position="Hon. Treasurer" email="Asjad@chelsfieldcc.co.uk" number="07984130132" image={Asjad2} />
         <KeyClubContact name="
-         Afaq Punjabi" position="Operations Officer" email="Afaqsworld@yahoo.co.uk" number="+447958044726" image={AfaqPunjabi} />
+         Afaq Punjabi" position="Operations Officer" email="Afaq@chelsfieldcc.co.uk" number="+447958044726" image={AfaqPunjabi} />
          <KeyClubContact name="
-          Tanveer Aslam" position="Skill development officer" email="tan.aslam@gmail.com" number="+447877729107" image={TanveerAslam} />
+          Tanveer Aslam" position="Skill development officer" email="Tanveer@chelsfieldcc.co.uk" number="+447877729107" image={TanveerAslam} />
         <KeyClubContact name="
          Ijaz Butt" position="Head Coach" email="" number="" image={headCoach} />
         </div>

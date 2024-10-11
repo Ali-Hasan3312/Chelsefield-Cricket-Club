@@ -1,5 +1,4 @@
-import { FaFacebook } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/chelsfield_croped-removebg-preview.png";
 const Footer = () => {
@@ -30,37 +29,37 @@ const Footer = () => {
         </div>
         </div>
         <div className=" h-48 w-[1px] bg-gray-300 max-sm:opacity-0 max-sm:-mt-[380px]"></div>
-        <div className="grid grid-cols-2 gap-8 max-sm:ml-2 -ml-6">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 max-sm:ml-1 -ml-6">
         <div className=" text-white">
-            <h2 className=" text-xl font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Home</h2>
-        </div>
-        <div className=" text-white">
-            <h2 className=" text-xl font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Teams</h2>
-        </div>
-        <div className=" text-white">
-            <h2 className=" text-xl -mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Shop</h2>
+            <h2 className="text-base md:text-xl font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300"
+            onClick={ScrollTop}
+            >Home</h2>
         </div>
         <div className=" text-white">
-            <h2 className=" text-xl -mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Contact</h2>
+            <Link to={"/gallery"} onClick={ScrollTop} className="text-base md:text-xl font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Gallery</Link>
         </div>
         <div className=" text-white">
-            <h2 className=" text-xl -mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Machtes</h2>
+            <Link to={"/about"} onClick={ScrollTop} className="text-base md:text-xl -mt-0 md:-mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">About</Link>
+        </div>
+       
+        <div className=" text-white">
+            <Link to={"/touch"} onClick={ScrollTop} className="text-base md:text-xl -mt-0 md:-mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Contact</Link>
+        </div>
+       
+        <div className=" text-white">
+            <Link to={"https://chelsfield.play-cricket.com/Matches"} className="text-base md:text-xl -mt-0 md:-mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Fixtures</Link>
         </div>
         <div className=" text-white">
-            <h2 className=" text-xl -mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">News</h2>
+            <Link to={"https://chelsfield.play-cricket.com/statistics/complete_registration?redirectUrl=https%3A%2F%2Fchelsfield.play-cricket.com%2FStatistics"} className="text-base md:text-xl -mt-0 md:-mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Statistics</Link>
         </div>
-        <div className=" text-white ">
-            <h2 className=" text-xl -mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Media</h2>
-        </div>
-        <div className=" text-white">
-            <h2 className=" text-xl -mt-8 font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300">Information</h2>
-        </div>
+       
         </div>
         <div className=" h-48 w-[1px] bg-gray-300 max-sm:opacity-0 max-sm:-mt-[350px]"></div>
         <div className=" max-sm:-mt-8">
             <h2 className=" text-lg text-nowrap text-white uppercase font-semibold">Follow us on social media</h2>
             <div className="flex items-center gap-8 mt-4 text-xl text-white">
-            <FaFacebook className=" hover:text-lime-400 hover:cursor-pointer transition-all duration-300" /> <FaXTwitter  className=" hover:text-lime-400 hover:cursor-pointer transition-all duration-300" />
+                <Link to={"https://www.facebook.com/profile.php?id=100094901001041"}> <FaFacebook className=" hover:text-lime-400 transition-all duration-300" /> </Link>
+          <Link to={"https://www.instagram.com/chelsfieldcc1731?igsh=azhkYzJkaWljNTR0&utm_source=qr"}> <FaInstagram  className=" hover:text-lime-400 hover:cursor-pointer transition-all duration-300" /></Link>
             </div>
         </div>
         </div>

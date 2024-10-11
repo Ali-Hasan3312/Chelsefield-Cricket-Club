@@ -19,11 +19,11 @@ const HeroSection = () => {
       {/* Background overlay to make text stand out */}
       <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
       <div className="absolute top-[50%] -translate-y-1/2 left-[19%] text-white w-[60%] max-sm:w-[80%] max-sm:left-[10%] mx-auto z-20">
-        <h1 className="text-[60px] max-sm:text-[32px] font-bold uppercase leading-[1] text-center overflow-hidden text-shadow-md">
+        <h1 className="text-[60px] max-sm:text-[30px] font-bold uppercase leading-[1] text-center overflow-hidden text-shadow-md">
           Welcome to Chelsefield Cricket Club
         </h1>
-        <p className="text-center text-lg max-sm:text-base mt-4 font-semibold max-sm:leading-tight text-shadow-md">
-          One of the world’s oldest cricket clubs since 1731 <br />
+        <p className="text-center w-[80%] md:w-[58%] mx-auto text-lg max-sm:text-base mt-4 font-semibold max-sm:leading-tight text-shadow-md">
+          One of the world’s oldest cricket clubs since 1731 
           with a thriving junior and senior section.
         </p>
         <div className="flex items-center justify-center mt-4 gap-10 font-semibold">

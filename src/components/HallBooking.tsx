@@ -1,9 +1,9 @@
 import { PiGreaterThanLight } from "react-icons/pi"
 import { Link } from "react-router-dom"
-import hallroom1 from "../assets/hireHall/hirehall1.jpg"
-import hallroom2 from "../assets/hireHall/hirehall2.jpg"
-import hallroom3 from "../assets/hireHall/hirehall3.jpg"
-import hallroom4 from "../assets/hireHall/hirehall4.jpg"
+import hallroom1 from "../assets/hireHall/hallroom.jpg"
+import hallroom2 from "../assets/hireHall/hallroom.jpg"
+import hallroom3 from "../assets/hireHall/hallroom.jpg"
+import hallroom4 from "../assets/hireHall/hallroom.jpg"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -25,7 +25,7 @@ const HallBooking = () => {
     <div className="w-full bg-gray-800 pb-10">
          <div className='bg3 relative'></div>
        <div className=' absolute top-[40%] left-[20%] z-10 text-white w-[60%] mx-auto'>
-           <h1 className=' text-[60px] max-sm:text-[40px] font-bold uppercase leading-[1] text-center'>Hire our facilities</h1>
+           <h1 className='text-[60px] max-sm:text-[40px] font-bold uppercase leading-[1] text-center'>Hire our facilities</h1>
        </div>
        <div className=" flex items-center gap-1 ml-32 py-4 text-white">
             <Link to={"/"} className=" hover:underline">Home</Link>

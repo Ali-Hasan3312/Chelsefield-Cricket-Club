@@ -67,7 +67,7 @@ const GetInTouch =  () => {
         <div className=" mt-8">
         <hr />
             <h1 className=" text-white uppercase mt-4 text-2xl font-semibold text-center">Where to find us</h1>
-        <iframe className="w-[95%] rounded-lg md:w-[80%] mx-auto h-[400px] pb-8 object-cover mt-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.4855566747888!2d0.13059060000000003!3d51.3573698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8acda9c861a09%3A0xd711289971117e27!2sBucks%20Cross%20Rd%2C%20Chelsfield%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2s!4v1728301091750!5m2!1sen!2s" loading="lazy"></iframe>
+        <iframe className="w-[95%] rounded-lg md:w-[80%] mx-auto h-[400px] pb-8 object-cover mt-8" src="https://maps.google.com/maps?q=chelsfield%20cricket%20club&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
 
         </div>
     </div>
