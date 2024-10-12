@@ -5,7 +5,7 @@ import { HiUsers } from "react-icons/hi2";
 import { FaHeart } from "react-icons/fa";
 import CrossImage from "../assets/Untitled_design__2_-removebg-preview.png";
 import Our_Squad from "../assets/Our_Squad.jpg";
-import aboutImage from "../assets/AboutImage.jpg";
+import aboutImage from "../assets/users/NaeemAhad-removebg-preview.png";
 
 const About = () => {
   return (
@@ -98,10 +98,10 @@ const About = () => {
         </div>
 
         <div className="font-semibold w-[90%] mt-16 flex justify-between">
-          <h3 className="uppercase text-blue-500 text-nowrap ml-16 max-sm:ml-4">
-            Our Mission
+          <h3 className="uppercase text-blue-500 text-lg text-nowrap ml-16 max-sm:ml-4">
+            Chairman's statment
           </h3>
-          <div className="flex gap-8 mt-16 -ml-[8%] max-sm:-ml-[24%] max-sm:flex-col">
+          <div className="flex gap-8 mt-16 -ml-[17%] max-sm:-ml-[42%] max-sm:flex-col">
             <img
               className="h-[500px] w-[450px] object-cover"
               src={aboutImage}
@@ -109,14 +109,10 @@ const About = () => {
             />
             <div className="w-[70%] max-sm:w-full text-white">
               <p className=" text-[50px] max-sm:text-[20px]">
-                Our mission is to make cricket accessible to all, fostering a
-                community where players can enjoy the game, develop their
-                skills, and be part of a welcoming family-oriented club.
+              At Chelsfield Cricket Club, our vision is to cultivate a thriving cricketing community that embraces everyone.
               </p>
               <span className=" font-normal text-lg max-sm:text-sm">
-                We are committed to nurturing a positive, inclusive environment
-                where everyone—regardless of skill level—can feel valued and
-                supported.
+              As the chairman, I am dedicated to ensuring that our club remains a beacon of excellence, inclusivity, and passion for the sport. We strive to provide top-notch facilities, foster talent across all age groups, and create an environment where every member feels valued and empowered. Together, we will continue to uphold the proud traditions of our club while innovating for a brighter future in cricket
               </span>
             </div>
           </div>
@@ -124,7 +120,7 @@ const About = () => {
 
         <div className="flex items-center justify-center max-sm:flex-col gap-8 mt-20 relative">
           <img
-            className="absolute -top-40 -left-[290px] w-[980px] h-[520px] z-0"
+            className="absolute -top-40 max-sm:opacity-0 -left-[290px] w-[980px] h-[520px] z-0"
             src={CrossImage}
             alt="Decoration"
           />

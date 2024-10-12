@@ -17,8 +17,9 @@ const HeroSection = () => {
     <div className="relative w-full">
       <HeroSlider stateValue={heroCount} />
       {/* Background overlay to make text stand out */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-      <div className="absolute top-[50%] -translate-y-1/2 left-[19%] text-white w-[60%] max-sm:w-[80%] max-sm:left-[10%] mx-auto z-20">
+      <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+    <div className="flex justify-center">
+    <div className="absolute top-[13%] flex flex-col gap-4 max-sm:top-[28%] text-white w-[60%] max-sm:w-[90%] mx-auto z-20">
         <h1 className="text-[60px] max-sm:text-[30px] font-bold uppercase leading-[1] text-center overflow-hidden text-shadow-md">
           Welcome to Chelsefield Cricket Club
         </h1>
@@ -41,6 +42,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

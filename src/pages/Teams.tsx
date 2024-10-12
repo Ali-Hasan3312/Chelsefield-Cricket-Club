@@ -34,16 +34,22 @@ interface TeamsProps {
           <h1 className="text-3xl md:text-4xl font-semibold text-white text-center">Meet the Team</h1>
   
           {/* Captain Section */}
-          <div className="flex w-[90%] max-sm:w-full mx-auto gap-8 max-sm:flex-col bg-gray-900 shadow-lg rounded-lg overflow-hidden">
-           
-            {/* Captain Image and Content */}
-            <div className="w-[60%] max-sm:w-full p-8 text-gray-200 flex flex-col gap-4">
+          <div className="flex w-[90%] max-sm:w-full mx-auto py-8 max-sm:gap-2 gap-8 flex-col bg-gray-900 shadow-lg rounded-lg overflow-hidden">
+            {/* Team Images */}
+            <div className=" w-[90%] mx-auto">
               <img
-                src={captainImage}
-                alt={`${captainName}`}
-                className="w-[300px] h-[300px] object-cover rounded-lg mb-2"
+                src={teamImage2}
+                alt="Team Image 1"
+                className="w-full max-sm:rounded-lg h-[400px] object-contain mb-4"
               />
-              <h2 className="md:text-3xl text-xl font-bold mb-2">{captainName}</h2>
+             
+            </div>
+            {/* Captain Image and Content */}
+            <div className="w-[90%] mx-auto max-sm:p-2 p-8 text-gray-200 ">
+           <div className="flex md:flex-row flex-col gap-8">
+             
+          <div>
+          <h2 className="md:text-3xl text-xl font-bold mb-2">{captainName}</h2>
               <p className="md:text-lg text-sm">
                 {captainName} is the team captain, leading the squad with passion, dedication, and years
                 of experience. He plays a vital role in mentoring the team and bringing out the best in
@@ -61,16 +67,15 @@ interface TeamsProps {
                 <p className="text-sm md:text-base">Email: <a href={`mailto:${captainEmail}`} className="text-blue-500">{captainEmail}</a></p>
                 <p className="text-sm md:text-base">Phone: <a href={`tel:${captainPhone}`} className="text-blue-500">{captainPhone}</a></p>
               </div>
-            </div>
-            {/* Team Images */}
-            <div className="w-[40%] max-sm:w-[90%] mx-auto">
-              <img
-                src={teamImage2}
-                alt="Team Image 1"
-                className="w-full max-sm:rounded-lg h-full object-cover mb-4"
+          </div>
+          <img
+                src={captainImage}
+                alt={`${captainName}`}
+                className="w-[300px] mx-auto h-[300px] object-cover rounded-lg mb-2"
               />
-             
+           </div>
             </div>
+           
   
            
           </div>

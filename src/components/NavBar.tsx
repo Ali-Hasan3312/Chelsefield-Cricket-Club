@@ -128,7 +128,7 @@ const NavBar = () => {
                 <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
 
                 <Link
-                  to=""
+                  to="/teams/indoor"
                 className="  w-full text-center py-2 px-4"
                   onClick={() => setIsDropdownOpen(false)}
                 >
@@ -312,7 +312,7 @@ const NavBar = () => {
                 <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
 
                 <Link
-                  to=""
+                  to="/teams/indoor"
                 className="  w-full text-center py-2 px-4"
                   onClick={() => setIsDropdownOpen(false)}
                 >

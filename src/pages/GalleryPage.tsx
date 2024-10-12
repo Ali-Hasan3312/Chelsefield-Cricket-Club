@@ -1,4 +1,4 @@
-import galleryImage3 from "../assets/All Teams/saturday 1st xi.jpg";
+import galleryImage3 from "../assets/HeroSectionImages/fourthImage.jpg";
 import image1 from "../assets/Our Gallery/image1.jpg";
 import image10 from "../assets/Our Gallery/image10.jpg";
 import image11 from "../assets/Our Gallery/image11.jpg";

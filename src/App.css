@@ -31,6 +31,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg5{
+  background-image: url("./assets/club history.jpg");
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .diagonal-container {
   position: relative;
   width: 100%;
@@ -120,4 +127,35 @@
   position: relative;
   z-index: 2; /* Make sure text is above overlay */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for visibility */
+}
+.bg5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust opacity */
+  z-index: 1;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }

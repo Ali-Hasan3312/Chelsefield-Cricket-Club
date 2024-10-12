@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         </div>
         <div className=" h-48 w-[1px] bg-gray-300 max-sm:opacity-0 max-sm:-mt-[380px]"></div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 max-sm:ml-1 -ml-6">
+        <div className="grid grid-cols-2 gap-8 max-sm:ml-1 -ml-6">
         <div className=" text-white">
             <h2 className="text-base md:text-xl font-medium hover:text-lime-400 hover:cursor-pointer transition-all duration-300"
             onClick={ScrollTop}

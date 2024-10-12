@@ -1,7 +1,7 @@
 const PastPlayers = () => {
   return (
     <div className=' w-full bg-white pt-8'>
-      <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Past Players</h1>
+      <h1 className=" text-2xl uppercase font-semibold text-center pt-4 tracking-wider">Former Players</h1>
       <div className="grid grid-cols-4 max-sm:grid-cols-1 max-sm:w-[64%] w-[70%] gap-4 mx-auto mt-8">
         <div className="w-[200px] mx-auto h-[320px] max-sm:w-[230px] border border-gray-300 bg-customSky rounded">
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">

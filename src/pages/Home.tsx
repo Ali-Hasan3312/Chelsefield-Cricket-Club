@@ -17,10 +17,10 @@ const Home = () => {
       <div className=' w-full overflow-x-hidden'>
         <HeroSection />
         <AboutClub />
-        <LatestNews />
         <ClubContacts />
         <Ground />
         <History />
+        <LatestNews />
         <PastPlayers />
         <Sponsors />
         
