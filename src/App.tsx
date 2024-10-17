@@ -14,7 +14,7 @@ import T20captain from "./assets/All Teams/T20 Captain.png";
 import T20 from "./assets/All Teams/T20 Team.jpg";
 import Ahsan from "./assets/users/Ahsan Sher.jpg";
 import Loader from './components/Loader';
-
+import {Toaster} from "react-hot-toast"
 
 // Lazy load components
 const Footer = lazy(() => import('./components/Footer'));
@@ -57,6 +57,7 @@ function App() {
           </Routes>
           <Footer />
         </Suspense>
+        <Toaster />
       </div>
     </Router>
   );

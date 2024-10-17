@@ -10,7 +10,34 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaLocationDot } from "react-icons/fa6"
 import { IoCall } from "react-icons/io5"
 import { IoMdMail } from "react-icons/io"
+import axios from "axios"
+import toast from "react-hot-toast"
+import { useState } from "react"
 const HallBooking = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    bookingType: "",
+    message: "",
+  });
+
+  const handleChange = (e:any) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:3000/api/v1/hireHall", formData);
+      toast.success(response.data.message);
+      setFormData({ name: "", email: "", phone: "", bookingType: "Hire Hall", message: "" });
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.");
+      console.error(error);
+    }
+  };
   var settings = {
     dots: true,
     infinite: true,
@@ -52,7 +79,7 @@ const HallBooking = () => {
               <img className=" h-[450px] w-full rounded object-cover" src={hallroom4} alt="" />
             </div>
               </Slider>
-              <form>
+              <form onSubmit={handleSubmit}>
               <div className=" mt-8">
                 <h1 className=" text-2xl font-semibold text-center">Contact Us</h1>
                 <div className=" h-[600px] max-sm:h-[500px] grid grid-cols-[70%_30%] max-sm:grid-cols-1 w-full mx-auto shadow-lg mt-4">
@@ -62,20 +89,39 @@ const HallBooking = () => {
             <div className="grid grid-cols-2 max-sm:grid-cols-1">
                 <div className="h-[100px] w-[280px] mt-4">
                     <label className=" text-gray-400">Name *</label>
-                    <input type="text" className=" h-[30px] w-full max-sm:w-[90%] border-b-[1px] outline-none focus:border-black mt-2 placeholder:text-gray-600" placeholder="Your name" />
+                    <input
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    type="text" className=" h-[30px] w-full max-sm:w-[90%] border-b-[1px] outline-none focus:border-black mt-2 placeholder:text-gray-600" placeholder="Your name" />
                 </div>
                 <div className="h-[100px] w-[280px] mt-4">
                     <label className=" text-gray-400">Email *</label>
-                    <input type="text" className=" h-[30px] w-full max-sm:w-[90%] border-b-[1px] outline-none focus:border-black mt-2 placeholder:text-gray-600" placeholder="Your email" />
+                    <input
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    type="text" className=" h-[30px] w-full max-sm:w-[90%] border-b-[1px] outline-none focus:border-black mt-2 placeholder:text-gray-600" placeholder="Your email" />
                     
                 </div>
                 <div className="h-[100px] w-[280px] mt-4">
                     <label className=" text-gray-400">Phone *</label>
-                    <input type="text" className=" h-[30px] w-full max-sm:w-[90%] border-b-[1px] outline-none focus:border-black mt-2 placeholder:text-gray-600" placeholder="Phone #" />
+                    <input
+                     name="phone"
+                     value={formData.phone}
+                     onChange={handleChange}
+                     required
+                    type="text" className=" h-[30px] w-full max-sm:w-[90%] border-b-[1px] outline-none focus:border-black mt-2 placeholder:text-gray-600" placeholder="Phone #" />
                 </div>
                 <div className="h-[100px] w-[280px] mt-3 flex flex-col gap-2 text-gray-800">
                     <label className=" text-gray-400">Select *</label>
-                    <select>
+                    <select
+                     name="bookingType"
+                     value={formData.bookingType}
+                     onChange={handleChange}
+                    >
                       <option>Hire Hall</option>
                       <option>Hire Pitch</option>
                     </select>
@@ -84,9 +130,14 @@ const HallBooking = () => {
             </div>
             <div className="h-[100px] w-full mt-4">
                     <label className=" text-gray-400">Message *</label>
-                    <input type="text" className=" h-[30px] w-full border-b-[1px] outline-none focus:border-black mt-6 placeholder:text-gray-600" placeholder="Write your message" />
+                    <input
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    type="text" className=" h-[30px] w-full border-b-[1px] outline-none focus:border-black mt-6 placeholder:text-gray-600" placeholder="Write your message" />
                 </div>
-                <button className=" h-12 w-44 mt-4 hover:opacity-70 transition-all duration-300 text-white bg-blue-900 ">Send Message</button>
+                <button type="submit" className=" h-12 w-44 mt-4 hover:opacity-70 transition-all duration-300 text-white bg-blue-900 ">Send Message</button>
                 <div className=" max-sm:mt-4"></div>
             </div>
         </div>
