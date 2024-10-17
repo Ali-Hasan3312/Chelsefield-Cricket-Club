@@ -13,6 +13,8 @@ import SundayTigers2 from "./assets/All Teams/Sunday Tigers2.jpg";
 import T20captain from "./assets/All Teams/T20 Captain.png";
 import T20 from "./assets/All Teams/T20 Team.jpg";
 import Ahsan from "./assets/users/Ahsan Sher.jpg";
+import Loader from './components/Loader';
+
 
 // Lazy load components
 const Footer = lazy(() => import('./components/Footer'));
@@ -27,13 +29,13 @@ const Home = lazy(() => import('./pages/Home'));
 
 const Teams = lazy(() => import('./pages/Teams'));
 const GalleryPage = lazy(() => import('./pages/GalleryPage'));
-const ChelsfieldHistory = lazy(() => import('./components/ChelsfieldHistory'));
+const History = lazy(() => import('./pages/History'));
 
 function App() {
   return (
     <Router>
       <div className='overflow-x-hidden'>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
           <NavBar />
           <Routes>
             <Route path='/' element={<Home />} />
@@ -50,7 +52,7 @@ function App() {
             <Route path='/hall' element={<HallBooking />} />
             <Route path='/join' element={<JoinUs />} />
             <Route path='/equality' element={<Equality />} />
-            <Route path='/club-history' element={<ChelsfieldHistory />} />
+            <Route path='/club-history' element={<History />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

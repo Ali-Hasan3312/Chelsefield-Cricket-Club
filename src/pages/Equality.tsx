@@ -8,7 +8,7 @@ const Equality = () => {
       <div className="bg4 relative"></div>
 
       {/* Title section */}
-      <div className="absolute top-[44%] left-[20%] text-white w-[60%] mx-auto">
+      <div className="absolute top-[70%] left-[20%] text-white w-[60%] mx-auto">
         <h1 className="text-[30px] font-bold uppercase leading-tight text-center">
           Equality, Diversity, and Inclusivity
         </h1>

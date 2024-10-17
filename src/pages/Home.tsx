@@ -20,8 +20,8 @@ const Home = () => {
         <ClubContacts />
         <Ground />
         <History />
-        <LatestNews />
         <PastPlayers />
+        <LatestNews />
         <Sponsors />
         
       </div>

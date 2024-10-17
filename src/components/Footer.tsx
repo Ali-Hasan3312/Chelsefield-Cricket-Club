@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../assets/chelsfield_croped-removebg-preview.png";
+import logo from "../assets/chelsefield_footer_logo-removebg-preview.png";
 const Footer = () => {
     const ScrollTop = () => {
         window.scrollTo({
@@ -9,7 +9,7 @@ const Footer = () => {
         })
     }
   return (
-    <div className=' w-full bg-blue-900'>
+    <div className=' w-full bg-black'>
        <div className="flex pt-8 gap-28 px-16 max-sm:px-4 max-sm:flex-col">
         <div className="">
         <div className=" uppercase relative text-white flex items-center gap-4">
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         <div className=" h-48 w-[1px] bg-gray-300 max-sm:opacity-0 max-sm:-mt-[350px]"></div>
         <div className=" max-sm:-mt-8">
-            <h2 className=" text-lg text-nowrap text-white uppercase font-semibold">Follow us on social media</h2>
+            <h2 className=" lg:text-lg text-nowrap text-white uppercase lg:font-semibold">Follow us on social media</h2>
             <div className="flex items-center gap-8 mt-4 text-xl text-white">
                 <Link to={"https://www.facebook.com/profile.php?id=100094901001041"}> <FaFacebook className=" hover:text-lime-400 transition-all duration-300" /> </Link>
           <Link to={"https://www.instagram.com/chelsfieldcc1731?igsh=azhkYzJkaWljNTR0&utm_source=qr"}> <FaInstagram  className=" hover:text-lime-400 hover:cursor-pointer transition-all duration-300" /></Link>

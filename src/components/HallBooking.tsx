@@ -24,8 +24,8 @@ const HallBooking = () => {
   return (
     <div className="w-full bg-gray-800 pb-10">
          <div className='bg3 relative'></div>
-       <div className=' absolute top-[40%] left-[20%] z-10 text-white w-[60%] mx-auto'>
-           <h1 className='text-[60px] max-sm:text-[40px] font-bold uppercase leading-[1] text-center'>Hire our facilities</h1>
+       <div className=' absolute lg:top-[70%] left-[20%] z-10 top-[87%] text-white w-[60%] mx-auto'>
+           <h1 className='text-[60px] max-sm:text-[30px] max-sm:text-nowrap font-bold uppercase leading-[1] text-center'>Hire our facilities</h1>
        </div>
        <div className=" flex items-center gap-1 ml-32 py-4 text-white">
             <Link to={"/"} className=" hover:underline">Home</Link>
@@ -35,9 +35,9 @@ const HallBooking = () => {
         <hr />
         <div className=" text-white w-[80%] max-sm:w-[90%] max-sm:px-4 mx-auto mt-4">
             <p>
-            Our Hall room is available to hire throughout the week and is ideal for birthday parties, engagement parties, wedding receptions and those special occasions.</p>
-            <p>The hall room comes with its own fully-licensed bar and you are welcome to bring your own catering and music (either DJ or live band).</p>
-            <p>For any further enquiries, please contact David Crawley on 01322 225152 or email pavilion@chelsefieldcc.co.uk. Please book well in advance to avoid disappointment!</p>
+            Our Hall room is available to hire throughout the week and is ideal for birthday parties, engagement parties and those special occasions.</p>
+            
+            <p>For any further enquiries, please contact David Crawley on 01322 225152 or email facilities@chelsfieldcc.co.uk. Please book well in advance to avoid disappointment!</p>
             <Slider className=" mt-8" {...settings}>
             <div className="">
               <img className=" h-[450px] w-full rounded object-cover" src={hallroom1} alt="" />
@@ -100,11 +100,11 @@ const HallBooking = () => {
             </div>
             <div className="flex items-start gap-4 mt-8 max-sm:mt-4">
                 <IoCall className=" text-white text-xl" />
-                <p>07572-427856</p>
+                <p>+447572-427856</p>
             </div>
             <div className="flex items-start max-sm:flex-wrap gap-4 mt-8 max-sm:mt-4 ">
                 <IoMdMail className=" text-white text-xl max-sm:text-sm" />
-                <p className=" max-sm:text-sm max-sm:text-wrap">info@chelsefield.com</p>
+                <p className=" max-sm:text-sm max-sm:text-wrap">info@chelsfield.com</p>
             </div>
             <div className=" max-sm:mt-4"></div>
             </div>
