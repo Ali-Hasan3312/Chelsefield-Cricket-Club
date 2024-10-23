@@ -1,25 +1,24 @@
 import community from "../assets/club history/community gathering.jpg";
-import hero from "../assets/club history/hero image.jpg";
+import glimps1 from "../assets/club history/glimps1.jpg";
+import glimps3 from "../assets/club history/glimps3.jpg";
+import glimps2 from "../assets/club history/glimpse2.jpg";
 import historicMatch from "../assets/club history/historic match.jpg";
 import pitchPreparation from "../assets/club history/pitch preparation.jpg";
-import oldPavilion from "../assets/Old_Pavilion.jpg";
-import glimps1 from "../assets/club history/glimps1.jpg"
-import glimps2 from "../assets/club history/glimpse2.jpg"
-import glimps3 from "../assets/club history/glimps3.jpg"
+import oldPavilion from "../assets/club history/old pavillion black.jpg";
 const History = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Hero Section */}
       <section className="relative">
         <img
-          src={hero}
+          src={oldPavilion}
           alt="Chelsfield Cricket Club Hero"
-          className="w-full aspect-auto object-cover"
+          className="w-full h-[60vh] lg:h-[100vh]"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="text-center text-white px-4">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center">
+          <div className="text-center absolute top-16 lg:top-24 text-white px-4">
             <h1 className="lg:text-5xl text-2xl font-bold">History of Chelsfield Cricket Club</h1>
-            <p className="mt-4 text-base lg:text-xl font-semibold">
+            <p className="lg:mt-4 mt-1 w-[90%] mx-auto lg:w-full text-sm lg:text-xl font-semibold">
               A journey of cricket, community, and tradition since 1731.
             </p>
           </div>

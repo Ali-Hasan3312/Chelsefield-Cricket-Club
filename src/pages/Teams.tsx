@@ -6,6 +6,7 @@ interface TeamsProps {
     teamName: string;
     captainEmail: string;
     captainPhone: string;
+    captainStatment: string;
   }
   
   const Teams = ({
@@ -16,6 +17,7 @@ interface TeamsProps {
     teamName,
     captainEmail,
     captainPhone,
+    captainStatment
   }: TeamsProps) => {
     return (
       <div className="w-full bg-gray-800">
@@ -51,10 +53,7 @@ interface TeamsProps {
           <div>
           <h2 className="md:text-3xl text-xl font-bold mb-2">{captainName}</h2>
               <p className="md:text-lg text-sm">
-                {captainName} is the team captain, leading the squad with passion, dedication, and years
-                of experience. He plays a vital role in mentoring the team and bringing out the best in
-                every player. Under his leadership, the team has developed into a strong, competitive
-                unit.
+                {captainStatment} 
               </p>
               <p className="mt-4 md:text-lg text-sm">
                 The team, comprising players of diverse skill levels, shares a deep love for cricket.

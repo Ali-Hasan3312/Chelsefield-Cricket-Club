@@ -160,9 +160,9 @@
   cursor: pointer;
 }
 @font-face {
-  font-family: utm;
-  src: url("../public/fonts/utm\ times.ttf");
+  font-family: cambridge;
+  src: url("./assets//fonts/Cambridge-Bold.woff");
 }
 .chels{
-  font-family: "utm", sans-serif;
+  font-family: "cambridge", sans-serif;
 }

@@ -1,6 +1,7 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/chelsefield_footer_logo-removebg-preview.png";
+import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
     const ScrollTop = () => {
         window.scrollTo({
@@ -60,6 +61,7 @@ const Footer = () => {
             <div className="flex items-center gap-8 mt-4 text-xl text-white">
                 <Link to={"https://www.facebook.com/profile.php?id=100094901001041"}> <FaFacebook className=" hover:text-lime-400 transition-all duration-300" /> </Link>
           <Link to={"https://www.instagram.com/chelsfieldcc1731?igsh=azhkYzJkaWljNTR0&utm_source=qr"}> <FaInstagram  className=" hover:text-lime-400 hover:cursor-pointer transition-all duration-300" /></Link>
+          <Link to={"https://youtube.com/@chelsfieldcc-en8ru?si=htRWSKscg54teiXC"}> <FaYoutube  className=" hover:text-lime-400 hover:cursor-pointer transition-all duration-300" /></Link>
             </div>
         </div>
         </div>

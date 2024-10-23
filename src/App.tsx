@@ -4,7 +4,8 @@ import './App.css';
 import Asjad from "./assets/All Teams/2nd captain (Asjad).jpg";
 import SecondS from "./assets/All Teams/2S X1 .jpg";
 import IndoorCaptain from "./assets/All Teams/Indoor captain.jpg";
-import IndoorTeam from './assets/All Teams/Indoor league.png';
+import IndoorTeam from './assets/All Teams/Indoor Team.jpg';
+import IndoorHeader from "./assets/All Teams/Indoor Header Image.jpg"
 import thirdCaptain from "./assets/All Teams/karthick.jpg";
 import firstS from "./assets/All Teams/saturday 1st xi.jpg";
 import ThirdS from "./assets/All Teams/saturday 3S xi.jpg";
@@ -41,12 +42,27 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/touch' element={<GetInTouch />} />
-            <Route path='/teams/saturday1stxi' element={<Teams teamName='Saturday 1st XI' captainName="Ahsan Sher" captainImage={Ahsan} teamImage1={firstS} teamImage2={firstS} captainEmail='ahsanjsher@gmail.com' captainPhone='0787528664' />} />
-            <Route path='/teams/saturday2ndxi' element={<Teams teamName='Saturday 2nd XI' captainName="Asjad Meer" captainImage={Asjad} teamImage1={SecondS} teamImage2={SecondS} captainEmail='asjadazeem@hotmail.com' captainPhone='07984 130132' />} />
-            <Route path='/teams/saturday3rdxi' element={<Teams teamName='Saturday 3rd XI' captainName="Karthic" captainImage={thirdCaptain} teamImage1={ThirdS} teamImage2={ThirdS} captainEmail='karthick@hotmail.com' captainPhone='07984 130132' />} />
-            <Route path='/teams/sundaytigers' element={<Teams teamName='Sunday Tigers' captainName="Naeem Ahad" captainImage={sundaycaptain} teamImage1={SundayTigers2} teamImage2={SundayTigers2} captainEmail='ahadn@hotmail.com' captainPhone='+44 7572 427856' />} />
-            <Route path='/teams/t20' element={<Teams teamName='T20 Team' captainName="Kashif Malik" captainImage={T20captain} teamImage1={T20} teamImage2={T20} captainEmail='john@hotmail.com' captainPhone='49834948984835' />} />
-            <Route path='/teams/indoor' element={<Teams teamName='Indoor League' captainName="Rajesh" captainImage={IndoorCaptain} teamImage1={IndoorTeam} teamImage2={IndoorTeam} captainEmail='Rajesh@hotmail.com' captainPhone='49834948984835' />} />
+            <Route path='/teams/saturday1stxi' element={<Teams captainStatment='Ahsan Sher, captain for the CCC 1st XI has a long history of cricket from playing for university to clubs up north and various parts of London. His experience, passion and love for the game brings the team together and motivates everyone. CCC 1st XI consists of dedicated cricketers from a diverse range of backgrounds, everyone bringing in unique set of skills, experience and passion for the game. What brings us together is the love for the game. Our goal is to compete with dedication, unity and respect.' teamName='Saturday 1st XI' captainName="Ahsan Sher" captainImage={Ahsan} teamImage1={firstS} teamImage2={firstS} captainEmail='ahsanjsher@gmail.com' captainPhone='+44787528664' />} />
+            <Route path='/teams/saturday2ndxi' element={<Teams captainStatment='Asjad Meer is the team captain, leading the squad with passion, dedication, and years
+                of experience. He plays a vital role in mentoring the team and bringing out the best in
+                every player. Under his leadership, the team has developed into a strong, competitive
+                unit.' teamName='Saturday 2nd XI' captainName="Asjad Meer" captainImage={Asjad} teamImage1={SecondS} teamImage2={SecondS} captainEmail='asjadazeem@hotmail.com' captainPhone='+447984 130132' />} />
+            <Route path='/teams/saturday3rdxi' element={<Teams captainStatment='Karthic is the team captain, leading the squad with passion, dedication, and years
+                of experience. He plays a vital role in mentoring the team and bringing out the best in
+                every player. Under his leadership, the team has developed into a strong, competitive
+                unit.' teamName='Saturday 3rd XI' captainName="Karthic" captainImage={thirdCaptain} teamImage1={ThirdS} teamImage2={ThirdS} captainEmail='karthick@hotmail.com' captainPhone='+447984 130132' />} />
+            <Route path='/teams/sundaytigers' element={<Teams captainStatment='Naeem Ahad is the team captain, leading the squad with passion, dedication, and years
+                of experience. He plays a vital role in mentoring the team and bringing out the best in
+                every player. Under his leadership, the team has developed into a strong, competitive
+                unit.' teamName='Sunday Tigers' captainName="Naeem Ahad" captainImage={sundaycaptain} teamImage1={SundayTigers2} teamImage2={SundayTigers2} captainEmail='ahadn@hotmail.com' captainPhone='+44 7572 427856' />} />
+            <Route path='/teams/t20' element={<Teams captainStatment=' Kashif Malik is the team captain, leading the squad with passion, dedication, and years
+                of experience. He plays a vital role in mentoring the team and bringing out the best in
+                every player. Under his leadership, the team has developed into a strong, competitive
+                unit.' teamName='T20 Team' captainName="Kashif Malik" captainImage={T20captain} teamImage1={T20} teamImage2={T20} captainEmail='kashif@hotmail.com' captainPhone='49834948984835' />} />
+            <Route path='/teams/indoor' element={<Teams captainStatment=' Adnan is the team captain, leading the squad with passion, dedication, and years
+                of experience. He plays a vital role in mentoring the team and bringing out the best in
+                every player. Under his leadership, the team has developed into a strong, competitive
+                unit.' teamName='Indoor League' captainName="Adnan" captainImage={IndoorCaptain} teamImage1={IndoorHeader} teamImage2={IndoorTeam} captainEmail='adnan@hotmail.com' captainPhone='49834948984835' />} />
             
             <Route path='/gallery' element={<GalleryPage />} />
             <Route path='/hall' element={<HallBooking />} />

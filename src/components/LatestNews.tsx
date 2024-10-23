@@ -1,8 +1,8 @@
 import { useState } from "react";
 import groundWork from "../assets/News/Groun Work.jpg";
 import ManOfMatch from "../assets/News/Man of the match.jpg";
-import indoorleague from "../assets/News/Indoor League.jpg";
-
+import indoorleague from "../assets/News/Indoor New.jpg";
+import FourthNews from "../assets/News/fourth News.jpg"
 const LatestNews = () => {
   const [isOpen, setIsOpen] = useState(false); // Track modal state
   const [activeImage, setActiveImage] = useState<string | null>(null); // Track active image
@@ -95,6 +95,26 @@ const LatestNews = () => {
                 Chelsefield Cricket Club is thrilled to join the Indoor Cricket
                 League for the first time. Our team is eager to compete, develop
                 new strategies, and engage with fans in this exciting new arena.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-4">
+          <hr />
+          <div className="flex max-sm:flex-col mt-4 gap-4">
+            <img
+              className=" w-full h-[180px] lg:h-[200px] md:w-[28%]  object-cover cursor-pointer"
+              src={FourthNews}
+              alt=""
+              onClick={() => openModal(FourthNews)} // Open modal on click
+            />
+            <div className="flex flex-col gap-4 w-full md:w-[72%]">
+              <h3 className="text-sm uppercase">Latest News</h3>
+              <h2 className="text-lg font-medium">
+              Exciting News for Chelsfield CC!
+              </h2>
+              <p className="text-sm">
+              CCC 3s will compete in the Kent Cricket League starting May 2025! We've secured Norton Sports Club as our new home ground and are thrilled about the partnership. Join us next season to support ‘The Hunters,’ our newly named 3rd XI, as we aim for another fantastic year. Let’s make 2025 unforgettable!
               </p>
             </div>
           </div>

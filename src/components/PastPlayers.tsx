@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import JohnBristow from "../assets/Past Players/John Bristow.jpg"
 const PastPlayers = () => {
   const [isOpen, setIsOpen] = useState(false); // Track modal state
   const [activeImage, setActiveImage] = useState<string | null>(null); // Track active image
@@ -25,38 +25,37 @@ const PastPlayers = () => {
       <h1 className="text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
         Former Players
       </h1>
-      <div className="grid grid-cols-4 max-sm:grid-cols-1 max-sm:w-[64%] w-[70%] gap-4 mx-auto mt-8">
+      <div className="grid grid-cols-3 max-sm:grid-cols-1 w-[80%] gap-4 mx-auto mt-8">
         {/* Player 1 */}
-        <div className="w-[200px] mx-auto h-[320px] max-sm:w-[230px] border border-gray-300 bg-customSky rounded">
+        <div className="lg:w-[320px] w-[380px] mx-auto py-4 border border-gray-300 bg-customSky rounded">
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">
             <img
               className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
-              src="https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+              src={JohnBristow}
               alt="John Smith"
               onClick={() =>
                 openModal(
-                  "https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+                  JohnBristow
                 )
               }
             />
             <div>
               <h3 className="text-xs max-sm:text-sm text-white italic">
-                John Smith
+                John Bristow
               </h3>
               <p className="text-xs max-sm:text-sm text-gray-300 italic">
-                Chelsefield & England
+              The Godfather of Post-War <br /> Chelsfield Cricket
+
               </p>
             </div>
           </div>
-          <p className="text-xs max-sm:text-sm mt-4 w-[75%] mx-auto">
-            A legendary fast bowler for Chelsefield, John Smith earned national
-            fame by representing England in multiple test matches. His
-            dedication and skill have left a lasting legacy at the club.
+          <p className="text-xs max-sm:text-sm mt-4 w-[85%] mx-auto">
+          After the Second World War, Chelsfield Cricket Club found new life thanks to the tireless efforts of John Bristow, affectionately known by players as the “godfather of Chelsfield cricket.” His leadership was instrumental in reviving the club, bringing it back from the brink and transforming it into a competitive and thriving village team. Bristow’s extensive network within the cricket community attracted top-level talent to the club, particularly for Sunday matches, which was rare at the time. Under his guidance, Chelsfield Cricket Club grew stronger, earning the nickname “Chelsfield All Stars” due to the caliber of players he brought in. His legacy of fostering talent and building connections is still felt today, contributing to the club’s long-standing culture of inclusion and development.
           </p>
         </div>
 
         {/* Player 2 */}
-        <div className="w-[200px] mx-auto h-[320px] max-sm:w-[230px] border border-gray-300 bg-white rounded">
+        <div className="lg:w-[320px] w-[380px] mx-auto py-4 border border-gray-300 bg-white rounded">
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">
             <img
               className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
@@ -85,7 +84,7 @@ const PastPlayers = () => {
         </div>
 
         {/* Player 3 */}
-        <div className="w-[200px] mx-auto h-[320px] max-sm:w-[230px] border border-gray-300 bg-customSky rounded">
+        <div className="lg:w-[320px] w-[380px] mx-auto py-4 border border-gray-300 bg-customSky rounded">
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">
             <img
               className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
@@ -114,32 +113,7 @@ const PastPlayers = () => {
         </div>
 
         {/* Player 4 */}
-        <div className="w-[200px] mx-auto h-[320px] max-sm:h-[380px] max-sm:w-[230px] border border-gray-300 bg-white rounded">
-          <div className="flex items-center justify-center mx-auto gap-4 mt-4">
-            <img
-              className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
-              src="https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
-              alt="Paul Clark"
-              onClick={() =>
-                openModal(
-                  "https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
-                )
-              }
-            />
-            <div>
-              <h3 className="text-xs max-sm:text-sm text-black font-semibold italic">
-                Paul Clark
-              </h3>
-              <p className="text-xs max-sm:text-sm text-black italic">
-                1XI Batsman
-              </p>
-            </div>
-          </div>
-          <p className="text-xs max-sm:text-sm mt-4 w-[75%] mx-auto">
-            Known for his exceptional batting skills, Paul Clark captained the
-            Chelsefield 1XI team to multiple victories.
-          </p>
-        </div>
+       
       </div>
 
       {/* Modal */}

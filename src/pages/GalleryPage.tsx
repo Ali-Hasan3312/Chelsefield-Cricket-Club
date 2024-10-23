@@ -50,7 +50,7 @@ const GalleryPage = () => {
         style={{ backgroundImage: `url(${galleryImage3})` }} // Replace with the image you want to use
       >
          <div className="absolute inset-0 bg-black opacity-50"></div>
-        <h1 className="md:text-[60px] text-[40px] uppercase text-center z-10 font-bold text-white">
+        <h1 className="md:text-[60px] absolute top-20 lg:top-12 text-[40px] uppercase text-center z-10 font-bold text-white">
           Our Gallery
         </h1>
       </div>

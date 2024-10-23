@@ -57,7 +57,7 @@ const About = () => {
 
         {/* Introduction Section */}
         <div className="text-white mt-12 ml-16 max-sm:ml-8 w-[90%] flex flex-col gap-8">
-          <h1 className="font-semibold tracking-wider text-[70px] max-sm:text-[40px] leading-[1.1]">
+          <h1 className="chels font-semibold tracking-wider text-[70px] max-sm:text-[40px] leading-[1.1]">
             Chelsfield Cricket Club
           </h1>
           <p className="text-lg">
