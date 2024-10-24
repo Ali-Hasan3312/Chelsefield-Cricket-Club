@@ -43,18 +43,13 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/touch' element={<GetInTouch />} />
             <Route path='/teams/saturday1stxi' element={<Teams captainStatment='Ahsan Sher, captain for the CCC 1st XI has a long history of cricket from playing for university to clubs up north and various parts of London. His experience, passion and love for the game brings the team together and motivates everyone. CCC 1st XI consists of dedicated cricketers from a diverse range of backgrounds, everyone bringing in unique set of skills, experience and passion for the game. What brings us together is the love for the game. Our goal is to compete with dedication, unity and respect.' teamName='Saturday 1st XI' captainName="Ahsan Sher" captainImage={Ahsan} teamImage1={firstS} teamImage2={firstS} captainEmail='ahsanjsher@gmail.com' captainPhone='+44787528664' />} />
-            <Route path='/teams/saturday2ndxi' element={<Teams captainStatment='Asjad Meer is the team captain, leading the squad with passion, dedication, and years
-                of experience. He plays a vital role in mentoring the team and bringing out the best in
-                every player. Under his leadership, the team has developed into a strong, competitive
-                unit.' teamName='Saturday 2nd XI' captainName="Asjad Meer" captainImage={Asjad} teamImage1={SecondS} teamImage2={SecondS} captainEmail='asjadazeem@hotmail.com' captainPhone='+447984 130132' />} />
+            <Route path='/teams/saturday2ndxi' element={<Teams captainStatment='Asjad Mir, the skipper of CCC 2nd XI (aka the Lion Hearts), brings extensive experience and leads by example with passion and dedication. He plays a pivotal role in mentoring the team and unlocking each player’s potential. Under his leadership, the squad has become a united and competitive force.
+            The Lion Hearts consist of players with varying skill levels, united by a shared passion for cricket. We approach every match whether a league game or a friendly fixture with enthusiasm, determination, and a strong desire to win.' teamName='Saturday 2nd XI' captainName="Asjad Meer" captainImage={Asjad} teamImage1={SecondS} teamImage2={SecondS} captainEmail='asjadazeem@hotmail.com' captainPhone='+447984 130132' />} />
             <Route path='/teams/saturday3rdxi' element={<Teams captainStatment='Karthic is the team captain, leading the squad with passion, dedication, and years
                 of experience. He plays a vital role in mentoring the team and bringing out the best in
                 every player. Under his leadership, the team has developed into a strong, competitive
                 unit.' teamName='Saturday 3rd XI' captainName="Karthic" captainImage={thirdCaptain} teamImage1={ThirdS} teamImage2={ThirdS} captainEmail='karthick@hotmail.com' captainPhone='+447984 130132' />} />
-            <Route path='/teams/sundaytigers' element={<Teams captainStatment='Naeem Ahad is the team captain, leading the squad with passion, dedication, and years
-                of experience. He plays a vital role in mentoring the team and bringing out the best in
-                every player. Under his leadership, the team has developed into a strong, competitive
-                unit.' teamName='Sunday Tigers' captainName="Naeem Ahad" captainImage={sundaycaptain} teamImage1={SundayTigers2} teamImage2={SundayTigers2} captainEmail='ahadn@hotmail.com' captainPhone='+44 7572 427856' />} />
+            <Route path='/teams/sundaytigers' element={<Teams captainStatment='Naeem Ahad, the Captain of the Sunday Tigers, has led his team to an extraordinary feat, winning all 7 games under his captaincy this season. His leadership and strategic brilliance have made him a pivotal force for the team, adding to the Tigers’ already stellar performance. With his sharp decision-making, Naeem’s on-field presence has transformed each game into a well-executed victory. Beyond his tactical acumen, he successfully united the team, fostering strong bonds and a sense of camaraderie that turned the Tigers into a closely-knit unit. Naeem instilled a fighting spirit that made the Tigers a force to be reckoned with, inspiring each player to perform at their peak. Under his guidance, the Sunday Tigers have not only dominated on the field but have also become the most popular team, with everyone eager to play in it. His dual role as both a leader and top wicket-taker of the team emphasises his ability to lead by example, and this flawless run of victories has firmly cemented Naeem’s legacy in Sunday Tigers’ history.' teamName='Sunday Tigers' captainName="Naeem Ahad" captainImage={sundaycaptain} teamImage1={SundayTigers2} teamImage2={SundayTigers2} captainEmail='ahadn@hotmail.com' captainPhone='+44 7572 427856' />} />
             <Route path='/teams/t20' element={<Teams captainStatment=' Kashif Malik is the team captain, leading the squad with passion, dedication, and years
                 of experience. He plays a vital role in mentoring the team and bringing out the best in
                 every player. Under his leadership, the team has developed into a strong, competitive
@@ -62,7 +57,7 @@ function App() {
             <Route path='/teams/indoor' element={<Teams captainStatment=' Adnan is the team captain, leading the squad with passion, dedication, and years
                 of experience. He plays a vital role in mentoring the team and bringing out the best in
                 every player. Under his leadership, the team has developed into a strong, competitive
-                unit.' teamName='Indoor League' captainName="Adnan" captainImage={IndoorCaptain} teamImage1={IndoorHeader} teamImage2={IndoorTeam} captainEmail='adnan@hotmail.com' captainPhone='49834948984835' />} />
+                unit.' teamName='Indoor League' captainName="Adnan" captainImage={IndoorCaptain} teamImage1={IndoorHeader} teamImage2={IndoorTeam} captainEmail='adnan_ejaz_786@yahoo.co.uk' captainPhone='+447702416789' />} />
             
             <Route path='/gallery' element={<GalleryPage />} />
             <Route path='/hall' element={<HallBooking />} />

@@ -4,7 +4,8 @@ import glimps3 from "../assets/club history/glimps3.jpg";
 import glimps2 from "../assets/club history/glimpse2.jpg";
 import historicMatch from "../assets/club history/historic match.jpg";
 import pitchPreparation from "../assets/club history/pitch preparation.jpg";
-import oldPavilion from "../assets/club history/old pavillion black.jpg";
+import daveWalker from "../assets/club history/Dave Walker.jpg"
+import oldPavilion from "../assets/club history/hero image.jpg";
 const History = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -16,7 +17,7 @@ const History = () => {
           className="w-full h-[60vh] lg:h-[100vh]"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center">
-          <div className="text-center absolute top-16 lg:top-24 text-white px-4">
+          <div className="text-center absolute top-1/2 -translate-y-1/2 text-white px-4">
             <h1 className="lg:text-5xl text-2xl font-bold">History of Chelsfield Cricket Club</h1>
             <p className="lg:mt-4 mt-1 w-[90%] mx-auto lg:w-full text-sm lg:text-xl font-semibold">
               A journey of cricket, community, and tradition since 1731.
@@ -30,7 +31,18 @@ const History = () => {
         <h2 className="md:text-3xl text-xl font-semibold text-gray-800 mb-6 text-center">
           A Glimpse into the History of Chelsfield Cricket Club: From Horse-Drawn Rollers to Modern Times
         </h2>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <img
+            src={daveWalker}
+            alt="Pitch Preparation"
+            className="rounded-lg  lg:h-[400px] shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+          <p className="text-gray-600">
+            After World War II, John Bristow spearheaded the club's revival. His extensive cricket network brought 
+            talented players to the club, forming what became known as the “Chelsfield All Stars.” Thursday evenings 
+            were dedicated to pitch preparation, a communal task that fostered camaraderie.
+          </p>
+        </div>
         {/* Early Years Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <p className="text-gray-600">

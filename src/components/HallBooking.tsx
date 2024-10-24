@@ -155,7 +155,7 @@ const HallBooking = () => {
             </div>
             <div className="flex items-start max-sm:flex-wrap gap-4 mt-8 max-sm:mt-4 ">
                 <IoMdMail className=" text-white text-xl max-sm:text-sm" />
-                <p className=" max-sm:text-sm max-sm:text-wrap">info@chelsfield.com</p>
+                <p className=" max-sm:text-sm max-sm:text-wrap">admin@chelsfieldcc.co.uk</p>
             </div>
             <div className=" max-sm:mt-4"></div>
             </div>

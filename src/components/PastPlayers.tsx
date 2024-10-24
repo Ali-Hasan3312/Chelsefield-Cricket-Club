@@ -1,5 +1,6 @@
 import { useState } from "react";
 import JohnBristow from "../assets/Past Players/John Bristow.jpg"
+import JimEshelby from "../assets/Past Players/Jim Eshelby.jpg"
 const PastPlayers = () => {
   const [isOpen, setIsOpen] = useState(false); // Track modal state
   const [activeImage, setActiveImage] = useState<string | null>(null); // Track active image
@@ -59,27 +60,25 @@ const PastPlayers = () => {
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">
             <img
               className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
-              src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
-              alt="David Brown"
+              src={JimEshelby}
+              alt="Jim Eshelby"
               onClick={() =>
                 openModal(
-                  "https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+                  JimEshelby
                 )
               }
             />
             <div>
               <h3 className="text-xs max-sm:text-sm text-black font-semibold italic">
-                David Brown
+              Jim Eshelby
               </h3>
               <p className="text-xs max-sm:text-sm text-black italic">
-                Chelsefield & Kent
+                Chelsefield
               </p>
             </div>
           </div>
           <p className="text-xs max-sm:text-sm mt-4 w-[75%] mx-auto">
-            David was known for his outstanding performance as an all-rounder
-            for Chelsefield and Kent. His leadership and sportsmanship continue
-            to inspire future generations at the club.
+          J.                                  Jim Eshelby. Originally playing cricket in the Derbyshire leagues Jim moved to Kent as a teacher at Chelsfield Village School in 1983. Predominantly a bowler he played for Chelsfield CC until 2019 captaining the team for a few years in the early 2000s .Although originally a slow right arm orthodox spin bowler, Jim bowled countless overs ‘up the hill’ at around medium pace. Consistently accurate and hard to score runs against, Jim took many wickets for Chelsfield including regular 5 wicket hauls and a few hatricks for good measure.
           </p>
         </div>
 

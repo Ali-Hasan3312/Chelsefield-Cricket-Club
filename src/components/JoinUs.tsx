@@ -8,6 +8,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 const JoinUs = () => {
+  const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
     dateOfBirth: '',
@@ -23,9 +24,13 @@ const JoinUs = () => {
     medicalInfo: '',
   });
 
+
   const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+   const handleCheckboxChange = (e:any) => {
+    setIsChecked(e.target.checked); // Update checkbox state
   };
 
   const handleSubmit = async (e:any) => {
@@ -47,6 +52,7 @@ const JoinUs = () => {
         membershipType: '',
         medicalInfo: '',
       });
+      setIsChecked(false);
     } catch (error) {
       toast.error('Failed to register. Please try again.');
       console.error(error);
@@ -237,8 +243,18 @@ const JoinUs = () => {
                          onChange={handleChange}
                         className=" border border-gray-400 w-full text-black py-2 px-4 rounded-md" rows={4}></textarea>
                        
-                        
-                        <button className=" bg-blue-900 text-white py-2 px-4 rounded-md">Join this club</button>
+                       <div className="flex items-center gap-2 mt-4">
+              <input
+                type="checkbox"
+                id="termsCheckbox"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
+              <label htmlFor="termsCheckbox" className="text-sm">
+                I have read and agree with the <span className="font-semibold">terms and conditions</span>.
+              </label>
+            </div>
+                        <button  disabled={!isChecked} className={`bg-blue-900 text-white py-2 px-4 rounded-md ${!isChecked? "bg-opacity-70 cursor-not-allowed" : ""}`}>Join this club</button>
                     </div>
                 </form>
                 <div className='mt-10 w-[90%] max-sm:w-full bg-white rounded max-sm:px-6 px-12 py-8 text-black'>
@@ -271,9 +287,9 @@ const JoinUs = () => {
                
                <p className=" mb-2 font-semibold text-lg max-sm:text-base">For any queries, 
                </p>
-               <p className=" mb-2 font-semibold max-sm:text-sm">Contact Us At:  <span className=' font-normal'>+1 (291) 939 9321</span>
+               <p className=" mb-2 font-semibold max-sm:text-sm">Contact Us At:  <span className=' font-normal'>+44 7572 427856</span>
                </p>
-               <p className=" mb-2 font-semibold max-sm:text-sm">Club Email:  <span className=' font-normal'>Info@chelsefield.com</span>
+               <p className=" mb-2 font-semibold max-sm:text-sm">Club Email:  <span className=' font-normal'>info@chelsfield.cc.co.uk</span>
                </p>
               
            </div>
