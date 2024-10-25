@@ -84,7 +84,7 @@ const NavBar = () => {
   return (
     <div className="pb-4 top-0 mx-auto overflow-hidden bg-white">
       
-          <img className="h-[95px] inset-x-0 lg:h-[180px] w-[100vw] object-cover" src={logo} alt="" />
+          <img className="h-[80px] inset-x-0 lg:h-[180px] w-[100vw] object-cover" src={logo} alt="" />
       <div className="flex lg:flex-row flex-col items-end lg:items-center gap-8">
       <div className="w-[92%] mx-auto flex items-center pt-3 justify-between ">
      {!phoneActive && (

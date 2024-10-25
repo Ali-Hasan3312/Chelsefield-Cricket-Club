@@ -35,8 +35,10 @@ const JoinUs = () => {
 
   const handleSubmit = async (e:any) => {
     e.preventDefault();
+    console.log(import.meta.env.VITE_SERVER);
+    
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/join', formData);
+      const response = await axios.post(`${import.meta.env.VITE_SERVER}/api/v1/join`, formData);
       toast.success(response.data.message);
       setFormData({
         fullName: '',
@@ -289,7 +291,7 @@ const JoinUs = () => {
                </p>
                <p className=" mb-2 font-semibold max-sm:text-sm">Contact Us At:  <span className=' font-normal'>+44 7572 427856</span>
                </p>
-               <p className=" mb-2 font-semibold max-sm:text-sm">Club Email:  <span className=' font-normal'>info@chelsfield.cc.co.uk</span>
+               <p className=" mb-2 font-semibold max-sm:text-sm">Club Email:  <span className=' font-normal'>info@chelsfieldcc.co.uk</span>
                </p>
               
            </div>

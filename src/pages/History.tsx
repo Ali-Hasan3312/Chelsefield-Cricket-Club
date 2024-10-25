@@ -5,16 +5,17 @@ import glimps2 from "../assets/club history/glimpse2.jpg";
 import historicMatch from "../assets/club history/historic match.jpg";
 import pitchPreparation from "../assets/club history/pitch preparation.jpg";
 import daveWalker from "../assets/club history/Dave Walker.jpg"
-import oldPavilion from "../assets/club history/hero image.jpg";
+import oldPavilion from "../assets/club history/old pavillion black.jpg";
+import heroImage from "../assets/club history/hero image.jpg";
 const History = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Hero Section */}
       <section className="relative">
         <img
-          src={oldPavilion}
+          src={heroImage}
           alt="Chelsfield Cricket Club Hero"
-          className="w-full h-[60vh] lg:h-[100vh]"
+          className="w-full h-[60vh] object-cover lg:object-fill lg:h-[100vh]"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center">
           <div className="text-center absolute top-1/2 -translate-y-1/2 text-white px-4">
@@ -35,7 +36,7 @@ const History = () => {
           <img
             src={daveWalker}
             alt="Pitch Preparation"
-            className="rounded-lg  lg:h-[400px] shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg h-[400px] w-full lg:w-[450px] shadow-lg hover:scale-105 transition-transform duration-300"
           />
           <p className="text-gray-600">
             After World War II, John Bristow spearheaded the club's revival. His extensive cricket network brought 

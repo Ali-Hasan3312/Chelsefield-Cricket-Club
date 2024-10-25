@@ -1,6 +1,7 @@
 import { useState } from "react";
 import JohnBristow from "../assets/Past Players/John Bristow.jpg"
 import JimEshelby from "../assets/Past Players/Jim Eshelby.jpg"
+import daveWalker from "../assets/club history/Dave Walker.jpg"
 const PastPlayers = () => {
   const [isOpen, setIsOpen] = useState(false); // Track modal state
   const [activeImage, setActiveImage] = useState<string | null>(null); // Track active image
@@ -87,17 +88,17 @@ const PastPlayers = () => {
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">
             <img
               className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
-              src="https://images.unsplash.com/photo-1583071299210-c6c113f4ac91?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+              src={daveWalker}
               alt="Alan Jones"
               onClick={() =>
                 openModal(
-                  "https://images.unsplash.com/photo-1583071299210-c6c113f4ac91?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+                  daveWalker
                 )
               }
             />
             <div>
               <h3 className="text-xs max-sm:text-sm text-white italic">
-                Alan Jones
+                Dave Walker
               </h3>
               <p className="text-xs max-sm:text-sm text-gray-300 italic">
                 Chelsefield
@@ -105,9 +106,7 @@ const PastPlayers = () => {
             </div>
           </div>
           <p className="text-xs max-sm:text-sm mt-4 w-[75%] mx-auto">
-            A talented batsman, Alan's contributions to Chelsefield's successes
-            are immeasurable. His dedication to the club during his career
-            cemented his place as one of its finest players.
+          Dave Walker is a lifelong member of Chelsfield Cricket Club, deeply connected to its century-old history. His family’s involvement spans four generations, and Dave plays a key role in preserving and sharing the club’s rich heritage. Known for his vast knowledge of the club’s past, he keeps alive memories of earlier times when the community played a central role in the club’s activities, including preparing pitches with horse-drawn rollers. Through his dedication, Dave ensures that Chelsfield Cricket Club remains a symbol of tradition, community, and a deep love for cricket.
           </p>
         </div>
 
