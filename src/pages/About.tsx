@@ -1,21 +1,17 @@
 import { PiGreaterThanLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import { GiBleedingEye } from "react-icons/gi";
-import { HiUsers } from "react-icons/hi2";
-import { FaHeart } from "react-icons/fa";
-import CrossImage from "../assets/Untitled_design__2_-removebg-preview.png";
-import Our_Squad from "../assets/Our_Squad.jpg";
 import aboutImage from "../assets/users/NaeemAhad-removebg-preview.png";
 
 const About = () => {
   return (
     <>
       <div className="w-full bg-gray-800 pb-8">
-        <div className=" flex items-center gap-1 ml-32 py-4 text-white">
-          <Link to={"/"} className=" hover:underline">
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-1 ml-32 py-4 text-white">
+          <Link to={"/"} className="hover:underline">
             Home
           </Link>
-          <PiGreaterThanLight className=" text-sm" />
+          <PiGreaterThanLight className="text-sm" />
           <span>About Us</span>
         </div>
         <hr />
@@ -32,13 +28,12 @@ const About = () => {
               <p className="text-gray-100">
                 Bucks Cross Road
                 <br />
-                Chelsfield
+                Chelsfield, Orpington, Kent, BR6 7RN
                 <br />
-                Orpington, Kent
-                <br />
-                BR6 7RN
-                <br />
-                Telephone: <a href="tel:07572-427856" className="text-blue-500">07572-427856</a>
+                Telephone:{" "}
+                <a href="tel:07572-427856" className="text-blue-500">
+                  07572-427856
+                </a>
               </p>
               <a
                 href="https://www.google.com/maps"
@@ -60,101 +55,96 @@ const About = () => {
           </div>
         </div>
 
-        {/* Original Content After the About Section */}
+        {/* Introduction Section */}
         <div className="text-white mt-12 ml-16 max-sm:ml-8 w-[90%] flex flex-col gap-8">
-          <h1 className=" font-semibold text-[90px] max-sm:text-[40px] leading-[1.1]">
-            Chelsfield Cricket Club: A place for cricket enthusiasts of all ages
-            and abilities.
+          <h1 className="chels font-semibold tracking-wider text-[70px] max-sm:text-[40px] leading-[1.1]">
+            Chelsfield Cricket Club
           </h1>
           <p className="text-lg">
-            We are a family-friendly club, welcoming players and their families,
+            A place for cricket enthusiasts of all ages and abilities. We are a
+            family-friendly club, welcoming players and their families,
             regardless of age or ability. Our Saturday 1st & 2nd XI teams
             compete in the Kent Cricket League, while our Sunday fixtures offer
             friendly matches throughout the summer.
           </p>
           <Link
             to={"/touch"}
-            className=" h-12 w-32 flex items-center justify-center bg-blue-500 text-white font-semibold hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500 transition-all duration-300"
+            className="h-12 w-32 flex items-center justify-center bg-blue-500 text-white font-semibold hover:bg-transparent hover:border hover:border-blue-500 hover:text-blue-500 transition-all duration-300"
           >
             Contact Us
           </Link>
         </div>
 
-        <div className="relative">
-          <div className="relative w-full h-[500px] overflow-hidden mt-8">
-            <div className="background-overlay absolute top-0 max-sm:opacity-0 left-0 w-1/2 h-full clip-diagonal z-10 bg-blue-500">
-              <h2 className=" w-[80%] text-white mt-4 ml-4 text-xl max-sm:opacity-0">
-                The Club exists to provide access to cricket for all. We have
-                created a family-oriented environment where players feel
-                supported and valued as members.
-              </h2>
-            </div>
-            <img
-              className=" absolute top-0 left-0 w-full h-full object-cover z-0"
-              src={Our_Squad}
-              alt="Squad"
-            />
-          </div>
-        </div>
-
-        <div className="font-semibold w-[90%] mt-16 flex justify-between">
-          <h3 className="uppercase text-blue-500 text-lg text-nowrap ml-16 max-sm:ml-4">
-            Chairman's statment
-          </h3>
-          <div className="flex gap-8 mt-16 -ml-[17%] max-sm:-ml-[42%] max-sm:flex-col">
-            <img
-              className="h-[500px] w-[450px] object-cover"
-              src={aboutImage}
-              alt="About"
-            />
-            <div className="w-[70%] max-sm:w-full text-white">
-              <p className=" text-[50px] max-sm:text-[20px]">
-              At Chelsfield Cricket Club, our vision is to cultivate a thriving cricketing community that embraces everyone.
-              </p>
-              <span className=" font-normal text-lg max-sm:text-sm">
-              As the chairman, I am dedicated to ensuring that our club remains a beacon of excellence, inclusivity, and passion for the sport. We strive to provide top-notch facilities, foster talent across all age groups, and create an environment where every member feels valued and empowered. Together, we will continue to uphold the proud traditions of our club while innovating for a brighter future in cricket
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-center max-sm:flex-col gap-8 mt-20 relative">
+        {/* Chairman's Statement Section */}
+        <div className="w-[90%] mx-auto mt-16 flex gap-8 items-start max-sm:flex-col">
           <img
-            className="absolute -top-40 max-sm:opacity-0 -left-[290px] w-[980px] h-[520px] z-0"
-            src={CrossImage}
-            alt="Decoration"
+            className="h-[500px] w-[450px] object-cover"
+            src={aboutImage}
+            alt="About"
           />
-          <div className="h-[330px] w-[380px] max-sm:w-[340px] bg-customBlack z-10">
-            <GiBleedingEye className="text-blue-500 text-[50px] ml-8 mt-8" />
-            <h2 className=" text-4xl font-semibold text-white ml-4 mt-4">
-              Club Vision
+          <div className="text-white w-[70%] max-sm:w-full">
+            <h2 className="text-4xl font-semibold mb-4 text-blue-500">
+              Chairman’s Statement – Chelsfield Cricket Club
             </h2>
-            <p className=" px-4 mt-4 text-white text-lg">
-              We aim to create a space where cricket enthusiasts, both young and
-              old, can thrive, learn, and develop a lifelong passion for the
-              game.
+            <p className="text-lg leading-relaxed mb-4">
+              Dear Members, Supporters, and Friends of Chelsfield Cricket Club,
+            </p>
+            <p className="text-lg leading-relaxed mb-4">
+              As Chairman of this great club, I would like to take this
+              opportunity to extend my heartfelt thanks to everyone who has been
+              part of Chelsfield Cricket Club over the past year. Whether you
+              are a player, coach, volunteer, sponsor, or supporter, your
+              contribution has been invaluable to our continued success both on
+              and off the field.
+            </p>
+            <p className="text-lg leading-relaxed mb-4">
+              This season has brought with it many highlights. Our teams have
+              shown tremendous spirit and determination, and we are proud of the
+              progress made across all age groups. The commitment of our players
+              and coaching staff to developing their skills and pushing for
+              excellence is evident, and the results are a testament to their
+              hard work.
+            </p>
+            <p className="text-lg leading-relaxed mb-4">
+              But Chelsfield Cricket Club is more than just the cricket we play.
+              It is about the community we are building together—a community
+              where all are welcome, where young and old come together to share
+              in the passion for the game.
             </p>
           </div>
-          <div className="h-[330px] w-[380px] max-sm:w-[340px] bg-customBlack z-10">
-            <HiUsers className="text-blue-500 text-[50px] ml-8 mt-8" />
-            <h2 className=" text-4xl font-semibold text-white ml-4 mt-4">
-              Community Spirit
-            </h2>
-            <p className=" px-4 mt-4 text-white text-lg">
-              Chelsfield Cricket Club values community. We encourage all players
-              to get involved, have fun, and share in the love of the sport.
-            </p>
-          </div>
-          <div className="h-[330px] w-[380px] max-sm:w-[340px] bg-customBlack z-10">
-            <FaHeart className="text-blue-500 text-[50px] ml-8 mt-8" />
-            <h2 className=" text-4xl font-semibold text-white ml-4 mt-4">
-              Commitment to Excellence
-            </h2>
-            <p className=" px-4 mt-4 text-white text-lg">
-              We are dedicated to fostering a love of cricket while promoting
-              excellence and sportsmanship on and off the field.
-            </p>
-          </div>
+        </div>
+
+        <div className="w-[90%] mx-auto mt-4">
+          <p className="text-white text-lg leading-relaxed mb-4">
+            Our membership continues to grow, and it is heartening to see the
+            next generation of players thriving, learning, and developing not
+            just as cricketers but as individuals who embody the spirit of
+            sportsmanship. I would like to acknowledge the tireless work of our
+            management and sub-committees and volunteers. Without your efforts
+            behind the scenes, none of this would be possible.
+          </p>
+          <p className="text-white text-lg leading-relaxed mb-4">
+            Looking ahead, we have exciting plans for the future. Whether it is
+            improving our facilities, expanding our youth programme, or
+            strengthening our competitive teams, we are focused on ensuring that
+            Chelsfield Cricket Club remains a hub for cricketing excellence and
+            community engagement for many years to come.
+          </p>
+          <p className="text-white text-lg leading-relaxed mb-4">
+            Finally, I want to thank all our sponsors and supporters. Your
+            generosity and belief in our club allow us to continue growing and
+            providing opportunities for all to enjoy the game we love.
+          </p>
+          <p className="text-white text-lg leading-relaxed mb-4">
+            As we look forward to the next chapter in our club’s journey, let us
+            continue to support each other and celebrate all that makes
+            Chelsfield Cricket Club the special place it is.
+          </p>
+          <p className="text-white text-lg mt-4">Yours sincerely,</p>
+          <p className="text-white text-lg font-semibold">
+            Naeem Ahad <br />
+            Chairman, Chelsfield Cricket Club
+          </p>
         </div>
       </div>
     </>
