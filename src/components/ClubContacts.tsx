@@ -4,7 +4,7 @@ import AfaqPunjabi from "../assets/users/Afaq Punjabi.jpg";
 import NaeemAhad from "../assets/users/NaeemAhad-removebg-preview.png";
 import TanveerAslam from "../assets/users/Tanveer Aslam.jpg";
 import Asjad2 from "../assets/users/Untitled design (6).png";
-
+import MaheshKannan from "../assets/users/Mahesh Kannan.jpg"
 interface ClubContactProps {
   image: string;
   name: string;
@@ -70,9 +70,17 @@ const ClubContacts = () => {
           image={NaeemAhad}
           onImageClick={openModal} // Pass the click handler
         />
+          <KeyClubContact
+          name="Mahesh Kannan"
+          position="Interim Secretary"
+          email="Mahesh@chelsfieldCC.co.uk"
+          number="+447865988332"
+          image={MaheshKannan}
+          onImageClick={openModal} // Pass the click handler
+        />
         <KeyClubContact
           name="Asjad Mir"
-          position="Hon. Treasurer"
+          position="Treasurer"
           email="Asjad@chelsfieldcc.co.uk"
           number="+44 7984 130132"
           image={Asjad2}
@@ -102,6 +110,7 @@ const ClubContacts = () => {
           image={headCoach}
           onImageClick={openModal} // Pass the click handler
         />
+      
       </div>
 
       {/* Modal */}
@@ -117,7 +126,7 @@ const ClubContacts = () => {
          <img
               src={activeImage!}
               alt="Active"
-              className="modal-content mx-auto -mt-8 block aspect-auto"
+              className="modal-content object-cover mx-auto -mt-8 block"
             />
             
           </div>

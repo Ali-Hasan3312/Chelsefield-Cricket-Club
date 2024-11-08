@@ -107,21 +107,21 @@ const GetInTouch = () => {
               </button>
             </form>
           </div>
-          <div className="bg-blue-900 max-sm:rounded-b-lg">
+          <div className="bg-blue-900 pb-4 max-sm:rounded-b-lg">
             <div className="w-[80%] mx-auto text-gray-400 flex flex-col gap-4 mt-8">
               <h1 className="text-xl text-white max-sm:text-lg">Contact Information</h1>
               <p>We will be happy to help with any questions you might have about the Club or hiring our facilities!</p>
               <div className="flex items-start gap-4 mt-8 max-sm:mt-4">
                 <FaLocationDot className="text-white text-xl" />
-                <p>Bucks Cross Road, Chelsefield, Orpington Kent, BR6 7RN</p>
+                <p>Bucks Cross Road, Chelsfield, Orpington Kent, BR6 7RN</p>
               </div>
               <div className="flex items-start gap-4 mt-8 max-sm:mt-4">
                 <IoCall className="text-white text-xl" />
-                <p>07572-427856</p>
+                <p>+447572-427856</p>
               </div>
               <div className="flex items-start max-sm:flex-wrap gap-4 mt-8 max-sm:mt-4">
                 <IoMdMail className="text-white text-xl" />
-                <p className="max-sm:text-sm">info@chelsefield.com</p>
+                <p className="max-sm:text-sm">info@chelsfieldcc.co.uk</p>
               </div>
             </div>
           </div>

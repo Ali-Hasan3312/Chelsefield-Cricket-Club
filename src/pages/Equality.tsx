@@ -30,12 +30,12 @@ const Equality = () => {
         </h1>
 
         <p className="text-lg mb-4">
-          At Chelsefield Cricket Club, we are fully committed to the principles of equality of opportunity in cricket. Our aim is to ensure that all employees, members, volunteers, and spectators are treated fairly, without discrimination, harassment, or intimidation.
+          At Chelsfield Cricket Club, we are fully committed to the principles of equality of opportunity in cricket. Our aim is to ensure that all employees, members, volunteers, and spectators are treated fairly, without discrimination, harassment, or intimidation.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">Non-Discrimination</h2>
         <p className="mb-4">
-          Chelsefield Cricket Club will not discriminate on the grounds of age, gender, disability, race, marital status, pregnancy, religion or belief, or sexual orientation.
+          Chelsfield Cricket Club will not discriminate on the grounds of age, gender, disability, race, marital status, pregnancy, religion or belief, or sexual orientation.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">Zero Tolerance for Harassment and Bullying</h2>
