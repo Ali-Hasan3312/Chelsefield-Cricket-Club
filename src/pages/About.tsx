@@ -30,13 +30,10 @@ const About = () => {
                 <br />
                 Chelsfield, Orpington, Kent, BR6 7RN
                 <br />
-                Telephone:{" "}
-                <a href="tel:07572-427856" className="text-blue-500">
-                  07572-427856
-                </a>
+                Telephone:{" "} +447572-427856
               </p>
               <a
-                href="https://www.google.com/maps"
+                href="https://maps.app.goo.gl/Vy7inxhQyEJx5vd18"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-4 w-[200px] text-center bg-blue-500 text-white font-semibold py-2 hover:bg-transparent hover:text-blue-500 hover:border hover:border-blue-500 transition-all duration-300"
@@ -54,7 +51,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
         {/* Introduction Section */}
         <div className="text-white mt-12 ml-16 max-sm:ml-8 w-[90%] flex flex-col gap-8">
           <h1 className="chels font-semibold tracking-wider text-[70px] max-sm:text-[40px] leading-[1.1]">

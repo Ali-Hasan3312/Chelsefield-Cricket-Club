@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import oldPavilion from "../assets/Old_Pavilion.jpg";
 import clubHistory from "../assets/club history.jpg";
-
+import aboutImage from "../assets/users/NaeemAhad-removebg-preview.png";
 const History = () => {
   const [isOpen, setIsOpen] = useState(false); // Track modal state
   const [activeImage, setActiveImage] = useState<string | null>(null); // Track active image
@@ -24,15 +23,15 @@ const History = () => {
   };
 
   return (
-    <div className="w-full bg-white pt-8">
+    <div className="w-full bg-white pt-8 pb-16">
       <h1 className="text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
         Club History
       </h1>
-      <div className="flex max-sm:flex-col md:gap-8 gap-2 items-center justify-center mt-8 md:w-[80%] w-[90%] mx-auto">
+      <div className="flex max-sm:flex-col  gap-8 items-center justify-center mt-8 md:w-[80%] w-[90%] mx-auto">
         {/* Section 1 */}
         <div className="h-[400px] md:w-[500px] w-full mx-auto flex flex-col gap-3 text-center">
           <img
-            className="h-[230px] w-[500px] mx-auto cursor-pointer"
+            className="h-[330px] w-[500px] mx-auto cursor-pointer"
             src={clubHistory}
             alt="Club History"
             onClick={() => openModal(clubHistory)} // Open modal on click
@@ -51,17 +50,19 @@ const History = () => {
         {/* Section 2 */}
         <div className="h-[400px] md:w-[500px] w-full mx-auto flex flex-col gap-3 text-center">
           <img
-            className="h-[230px] w-[500px] mx-auto cursor-pointer"
-            src={oldPavilion}
+            className="h-[330px] w-[500px] mx-auto cursor-pointer"
+            src={aboutImage}
             alt="Old Pavilion"
-            onClick={() => openModal(oldPavilion)} // Open modal on click
+            onClick={() => openModal(aboutImage)} // Open modal on click
           />
-          <span className="text-lg font-semibold">History of the Old Pavilion</span>
+          <Link to={"/about"} className="text-lg font-semibold">Chairman's Statement</Link>
           <p className="text-sm">
-            The old pavilion at Chelsefield Cricket Club has been a historic
-            symbol of the club's legacy. For many years, it served as the heart
-            of the club, hosting players and supporters alike, and continues to
-            hold a special place in our memories.
+             As Chairman of this great club, I would like to take this
+              opportunity to extend my heartfelt thanks to everyone who has been
+              part of Chelsfield Cricket Club over the past year. Whether you
+              are a player, coach, volunteer, sponsor, or supporter, your
+              contribution has been invaluable to our continued success both on
+              and off the field.
           </p>
         </div>
       </div>

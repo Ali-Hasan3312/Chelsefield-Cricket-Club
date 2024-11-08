@@ -1,8 +1,9 @@
 import { useState } from "react";
 import groundWork from "../assets/News/Groun Work.jpg";
 import ManOfMatch from "../assets/News/Man of the match.jpg";
-import indoorleague from "../assets/News/Indoor New.jpg";
+import indoorleague from "../assets/All Teams/Indoor League New.jpg";
 import FourthNews from "../assets/News/fourth News.jpg"
+import { Link } from "react-router-dom";
 const LatestNews = () => {
   const [isOpen, setIsOpen] = useState(false); // Track modal state
   const [activeImage, setActiveImage] = useState<string | null>(null); // Track active image
@@ -24,59 +25,33 @@ const LatestNews = () => {
   };
 
   return (
-    <div className="w-full bg-white mt-8">
+    <div className="w-full bg-white mt-16">
       <h1 className="text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
         Latest News
       </h1>
       <div className="w-[80%] bg-white mx-auto mt-8">
-        <hr />
+       
         {/* News Item 1 */}
-        <div>
+        <div className="mt-4">
+          
           <div className="flex max-sm:flex-col mt-4 gap-4">
             <img
-              className="h-[180px] w-full md:w-[28%] object-cover cursor-pointer"
-              src={ManOfMatch}
-              alt="Man of the Match"
-              onClick={() => openModal(ManOfMatch)} // Open modal on click
+              className=" w-full h-[180px] lg:h-[200px] md:w-[28%]  object-cover cursor-pointer"
+              src={FourthNews}
+              alt=""
+              onClick={() => openModal(FourthNews)} // Open modal on click
             />
             <div className="flex flex-col gap-4 w-full md:w-[72%]">
-              <h4 className="text-sm uppercase">Latest News</h4>
-              <h2 className="text-lg font-medium">Man of the Match</h2>
+              <Link to={"/all-news"} className="text-sm uppercase">Latest News</Link>
+              <Link to={"/all-news"} className="text-lg font-medium">
+              Exciting News for Chelsfield CC!
+              </Link>
               <p className="text-sm">
-                Congratulations to our Man of the Match for the Sam Memorial
-                Match! The outstanding performance on the field helped secure a
-                memorable victory.
+              CCC 3s will compete in the Kent Cricket League starting May 2025! We've secured Norton Sports Club as our new home ground and are thrilled about the partnership. Join us next season to support ‘The Hunters,’ our newly named 3rd XI, as we aim for another fantastic year. Let’s make 2025 unforgettable!
               </p>
             </div>
           </div>
         </div>
-
-        {/* News Item 2 */}
-        <div className="mt-4">
-          <hr />
-          <div className="flex max-sm:flex-col mt-4 gap-4">
-            <img
-              className="h-[180px] md:w-[28%] w-full object-cover cursor-pointer"
-              src={groundWork}
-              alt="Ground Work"
-              onClick={() => openModal(groundWork)} // Open modal on click
-            />
-            <div className="flex flex-col gap-4 md:w-[72%] w-full">
-              <h4 className="text-sm uppercase">Latest News</h4>
-              <h2 className="text-lg font-medium">
-                Ground work started for 2025 season
-              </h2>
-              <p className="text-sm">
-                We are excited to announce that groundwork for the 2025 season
-                has officially commenced. Our team is dedicated to enhancing
-                training programs, upgrading facilities, and recruiting new
-                talent to ensure a successful and competitive year ahead.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* News Item 3 */}
         <div className="mt-4">
           <hr />
           <div className="flex max-sm:flex-col mt-4 gap-4">
@@ -87,12 +62,12 @@ const LatestNews = () => {
               onClick={() => openModal(indoorleague)} // Open modal on click
             />
             <div className="flex flex-col gap-4 w-full md:w-[72%]">
-              <h3 className="text-sm uppercase">Latest News</h3>
-              <h2 className="text-lg font-medium">
+              <Link to={"/all-news"} className="text-sm uppercase">Latest News</Link>
+              <Link to={"/all-news"} className="text-lg font-medium">
                 CCC first year in Indoor Cricket League
-              </h2>
+              </Link>
               <p className="text-sm">
-                Chelsefield Cricket Club is thrilled to join the Indoor Cricket
+                Chelsfield Cricket Club is thrilled to join the Indoor Cricket
                 League for the first time. Our team is eager to compete, develop
                 new strategies, and engage with fans in this exciting new arena.
               </p>
@@ -103,23 +78,55 @@ const LatestNews = () => {
           <hr />
           <div className="flex max-sm:flex-col mt-4 gap-4">
             <img
-              className=" w-full h-[180px] lg:h-[200px] md:w-[28%]  object-cover cursor-pointer"
-              src={FourthNews}
-              alt=""
-              onClick={() => openModal(FourthNews)} // Open modal on click
+              className="h-[180px] md:w-[28%] w-full object-cover cursor-pointer"
+              src={groundWork}
+              alt="Ground Work"
+              onClick={() => openModal(groundWork)} // Open modal on click
+            />
+            <div className="flex flex-col gap-4 md:w-[72%] w-full">
+              <Link to={"/all-news"} className="text-sm uppercase">Latest News</Link>
+              <Link to={"/all-news"} className="text-lg font-medium">
+                Ground work started for 2025 season
+              </Link>
+              <p className="text-sm">
+                We are excited to announce that groundwork for the 2025 season
+                has officially commenced. Our team is dedicated to enhancing
+                training programs, upgrading facilities, and recruiting new
+                talent to ensure a successful and competitive year ahead.
+              </p>
+            </div>
+          </div>
+        
+        </div>
+        <div className="mt-4">
+        <hr />
+          <div className="flex max-sm:flex-col mt-4 gap-4">
+            <img
+              className="h-[180px] w-full md:w-[28%] object-cover cursor-pointer"
+              src={ManOfMatch}
+              alt="Man of the Match"
+              onClick={() => openModal(ManOfMatch)} // Open modal on click
             />
             <div className="flex flex-col gap-4 w-full md:w-[72%]">
-              <h3 className="text-sm uppercase">Latest News</h3>
-              <h2 className="text-lg font-medium">
-              Exciting News for Chelsfield CC!
-              </h2>
+              <Link to={"/all-news"} className="text-sm uppercase">Latest News</Link>
+              <Link to={"/all-news"} className="text-lg font-medium">Man of the Match</Link>
               <p className="text-sm">
-              CCC 3s will compete in the Kent Cricket League starting May 2025! We've secured Norton Sports Club as our new home ground and are thrilled about the partnership. Join us next season to support ‘The Hunters,’ our newly named 3rd XI, as we aim for another fantastic year. Let’s make 2025 unforgettable!
+                Congratulations to our Man of the Match for the Sam Memorial
+                Match! The outstanding performance on the field helped secure a
+                memorable victory.
               </p>
             </div>
           </div>
         </div>
+
+        {/* News Item 2 */}
+       
+
+        {/* News Item 3 */}
+       
+        
         <hr className="mt-4" />
+
       </div>
 
       {/* Modal */}
@@ -143,6 +150,10 @@ const LatestNews = () => {
           </div>
         </div>
       )}
+
+      <div className="flex items-center justify-center mt-8">
+        <Link to={"/all-news"} className="border-2 border-gray-800 text-gray-800 py-2 px-6 hover:scale-110 transition-all duration-300 text-lg">View All</Link>
+      </div>
     </div>
   );
 };

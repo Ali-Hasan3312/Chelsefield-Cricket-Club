@@ -172,15 +172,6 @@ const NavBar = () => {
                  </li>
                  <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
                    <Link
-                     to="/teams/indoor"
-                     className="w-full text-center py-2 px-4"
-                     onClick={() => setIsDropdownOpen(false)}
-                   >
-                     Indoor League
-                   </Link>
-                 </li>
-                 <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                   <Link
                      to="/teams/t20"
                      className="w-full text-center py-2 px-4"
                      onClick={() => setIsDropdownOpen(false)}
@@ -188,6 +179,16 @@ const NavBar = () => {
                      T20 Team
                    </Link>
                  </li>
+                 <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+                   <Link
+                     to="/teams/indoor"
+                     className="w-full text-center py-2 px-4"
+                     onClick={() => setIsDropdownOpen(false)}
+                   >
+                     Indoor League
+                   </Link>
+                 </li>
+                
                </ul>
              </div>
            )}
@@ -224,7 +225,7 @@ const NavBar = () => {
              location.pathname === "/hall" ? "text-blue-500" : ""
            }`}
          >
-           Hire Hall
+           Hire Facilities
          </Link>
          <Link
            to={"/touch"}
@@ -379,15 +380,6 @@ const NavBar = () => {
                   </li>
                   <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
                     <Link
-                      to="/teams/indoor"
-                      className="w-full text-center py-2 px-4"
-                      onClick={() => setIsDropdownOpen(false)}
-                    >
-                      Indoor League
-                    </Link>
-                  </li>
-                  <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
-                    <Link
                       to="/teams/t20"
                       className="w-full text-center py-2 px-4"
                       onClick={() => setIsDropdownOpen(false)}
@@ -395,6 +387,16 @@ const NavBar = () => {
                       T20 Team
                     </Link>
                   </li>
+                  <li className="flex justify-center w-full hover:bg-gray-200 transition-all duration-300 ease-in-out cursor-pointer">
+                    <Link
+                      to="/teams/indoor"
+                      className="w-full text-center py-2 px-4"
+                      onClick={() => setIsDropdownOpen(false)}
+                    >
+                      Indoor League
+                    </Link>
+                  </li>
+                 
                 </ul>
               </div>
             )}

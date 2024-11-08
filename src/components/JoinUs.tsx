@@ -78,7 +78,7 @@ const JoinUs = () => {
         <form
          onSubmit={handleSubmit}
         className=" mt-10 w-[90%] max-sm:w-full mx-auto bg-white rounded px-12 py-8 text-black" >
-        <h2 className=' text-center text-3xl max-sm:text-lg font-semibold'>Join Chelsefield Cricket Club</h2>
+        <h2 className=' text-center text-3xl max-sm:text-lg font-semibold'>Join Chelsfield Cricket Club</h2>
         <div className=' w-full border border-blue-500 bg-sky-500/10 max-sm:px-2 py-4 px-8 flex flex-col mt-4'>
           <div className=' text-sky-600 flex items-center gap-2 text-lg max-sm:text-sm'>
             <FaInfoCircle />

@@ -23,13 +23,13 @@ const PastPlayers = () => {
   };
 
   return (
-    <div className="w-full bg-white pt-8">
-      <h1 className="text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
+    <div className=" pt-8">
+      <h1 className="text-2xl font-semibold text-gray-700 text-center pt-4 tracking-wider">
         Former Players
       </h1>
       <div className="grid grid-cols-3 max-sm:grid-cols-1 w-[80%] gap-4 mx-auto mt-8">
         {/* Player 1 */}
-        <div className="lg:w-[320px] w-[380px] mx-auto py-4 border border-gray-300 bg-customSky rounded">
+        <div className="lg:w-[320px] w-[98%] mx-auto py-4 border border-gray-300 bg-customSky rounded">
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">
             <img
               className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
@@ -57,7 +57,7 @@ const PastPlayers = () => {
         </div>
 
         {/* Player 2 */}
-        <div className="lg:w-[320px] w-[380px] mx-auto py-4 border border-gray-300 bg-white rounded">
+        <div className="lg:w-[320px] w-[98%] mx-auto py-4 border border-gray-300 bg-white rounded">
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">
             <img
               className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
@@ -74,17 +74,17 @@ const PastPlayers = () => {
               Jim Eshelby
               </h3>
               <p className="text-xs max-sm:text-sm text-black italic">
-                Chelsefield
+                Chelsfield
               </p>
             </div>
           </div>
           <p className="text-xs max-sm:text-sm mt-4 w-[75%] mx-auto">
-          J.                                  Jim Eshelby. Originally playing cricket in the Derbyshire leagues Jim moved to Kent as a teacher at Chelsfield Village School in 1983. Predominantly a bowler he played for Chelsfield CC until 2019 captaining the team for a few years in the early 2000s .Although originally a slow right arm orthodox spin bowler, Jim bowled countless overs ‘up the hill’ at around medium pace. Consistently accurate and hard to score runs against, Jim took many wickets for Chelsfield including regular 5 wicket hauls and a few hatricks for good measure.
+          J. Jim Eshelby. Originally playing cricket in the Derbyshire leagues Jim moved to Kent as a teacher at Chelsfield Village School in 1983. Predominantly a bowler he played for Chelsfield CC until 2019 captaining the team for a few years in the early 2000s .Although originally a slow right arm orthodox spin bowler, Jim bowled countless overs ‘up the hill’ at around medium pace. Consistently accurate and hard to score runs against, Jim took many wickets for Chelsfield including regular 5 wicket hauls and a few hatricks for good measure.
           </p>
         </div>
 
         {/* Player 3 */}
-        <div className="lg:w-[320px] w-[380px] mx-auto py-4 border border-gray-300 bg-customSky rounded">
+        <div className="lg:w-[320px] w-[98%] mx-auto py-4 border border-gray-300 bg-customSky rounded">
           <div className="flex items-center justify-center mx-auto gap-4 mt-4">
             <img
               className="h-14 w-14 max-sm:h-16 max-sm:w-16 rounded-full object-cover hover:opacity-70 transition-all duration-300 cursor-pointer"
@@ -101,7 +101,7 @@ const PastPlayers = () => {
                 Dave Walker
               </h3>
               <p className="text-xs max-sm:text-sm text-gray-300 italic">
-                Chelsefield
+                Chelsfield
               </p>
             </div>
           </div>

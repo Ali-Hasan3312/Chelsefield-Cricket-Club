@@ -7,6 +7,7 @@ interface TeamsProps {
     captainEmail: string;
     captainPhone: string;
     captainStatment: string;
+    captainStatment2?: string;
   }
   
   const Teams = ({
@@ -17,7 +18,8 @@ interface TeamsProps {
     teamName,
     captainEmail,
     captainPhone,
-    captainStatment
+    captainStatment,
+    captainStatment2
   }: TeamsProps) => {
     return (
       <div className="w-full bg-gray-800">
@@ -56,9 +58,7 @@ interface TeamsProps {
                 {captainStatment} 
               </p>
               <p className="mt-4 md:text-lg text-sm">
-                The team, comprising players of diverse skill levels, shares a deep love for cricket.
-                We compete with enthusiasm, aiming for success in every match, whether it's a league
-                game or a friendly.
+               {captainStatment2}
               </p>
               {/* Contact Details */}
               <div className="mt-4">

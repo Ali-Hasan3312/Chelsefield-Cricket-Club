@@ -7,7 +7,6 @@ const Ground = lazy(() => import('../components/Ground'));
 const HeroSection = lazy(() => import('../components/HeroSection'));
 const History = lazy(() => import('../components/History'));
 const LatestNews = lazy(() => import('../components/LatestNews'));
-const PastPlayers = lazy(() => import('../components/PastPlayers'));
 const Sponsors = lazy(() => import('../components/Sponsors'));
 
 const Home = () => {
@@ -20,10 +19,8 @@ const Home = () => {
         <ClubContacts />
         <Ground />
         <History />
-        <PastPlayers />
         <LatestNews />
         <Sponsors />
-        
       </div>
     </Suspense>
   );

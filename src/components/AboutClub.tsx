@@ -46,8 +46,7 @@ const AboutClub = () => {
             Our Teams
           </Link>
           <p className="text-center mt-2">
-            On Saturdays we have three senior teams in league action and a
-            further two teams on Sundays.
+          We have 4 senior teams in Kent League and a mid-Week T20 team.
           </p>
         </div>
 

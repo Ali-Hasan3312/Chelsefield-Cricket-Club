@@ -7,6 +7,7 @@ import pitchPreparation from "../assets/club history/pitch preparation.jpg";
 import daveWalker from "../assets/club history/Dave Walker.jpg"
 import oldPavilion from "../assets/club history/old pavillion black.jpg";
 import heroImage from "../assets/club history/hero image.jpg";
+import PastPlayers from "../components/PastPlayers";
 const History = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -28,7 +29,7 @@ const History = () => {
       </section>
 
       {/* History Content */}
-      <section className="px-8 py-12 max-w-5xl mx-auto space-y-12">
+      <section className="px-8 pt-12 max-w-5xl mx-auto space-y-12">
         <h2 className="md:text-3xl text-xl font-semibold text-gray-800 mb-6 text-center">
           A Glimpse into the History of Chelsfield Cricket Club: From Horse-Drawn Rollers to Modern Times
         </h2>
@@ -105,9 +106,10 @@ const History = () => {
         <p className="text-gray-600 text-center mt-8">
           As narrated by Dave Walker, with contributions from Naeem Ahad, dated 13 October 2024.
         </p>
-
+      </section>
+        <PastPlayers />
         {/* Final Image Gallery */}
-        <div className="mt-12">
+        <div className="mt-12 max-w-5xl px-8 mx-auto space-y-12 pb-12">
           <h3 className="text-2xl font-semibold text-gray-700 mb-6 text-center">
             A Glimpse into Our Past
           </h3>
@@ -129,7 +131,6 @@ const History = () => {
             />
           </div>
         </div>
-      </section>
     </div>
   );
 };
