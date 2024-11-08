@@ -1,6 +1,6 @@
 import { useState } from "react";
 import groundWork from "../assets/News/Groun Work.jpg";
-import indoorleague from "../assets/News/Indoor New.jpg";
+import indoorleague from "../assets/All Teams/Indoor League New.jpg";
 import ManOfMatch from "../assets/News/Man of the match.jpg";
 import FourthNews from "../assets/News/fourth News.jpg";
 const News = () => {
