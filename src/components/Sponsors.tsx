@@ -6,6 +6,7 @@ import greenOlive from "../assets/sponsors/Green & Olive.jpg"
 import RealtyEye from "../assets/sponsors/Realty_Eye-removebg-preview.png"
 import hymglobal from "../assets/sponsors/hym_global-removebg.png"
 import zedExotics from "../assets/sponsors/zed exotics.jpg"
+import fishchips from "../assets/sponsors/fish and chips logo.jpg";
 const Sponsors = () => {
   return (
     <div className='w-full bg-white py-8'>
@@ -52,6 +53,11 @@ const Sponsors = () => {
        <img className='w-[340px] max-sm:w-[420px] h-[200px] object-contain' src="https://msidiqsons.com/wp-content/uploads/2023/10/logo-msidiq-2-420x107.png" alt="" />
         </Link>
       </div>
+      <div className='flex justify-center'>
+          <Link to={"https://www.tripadvisor.com/Restaurant_Review-g1934185-d7895050-Reviews-Mo_s_Fish_and_Chips-Orpington_Bromley_Greater_London_England.html"}>
+            <img className='w-[340px] max-sm:w-[420px] h-[200px] object-contain' src={fishchips} alt="Fish and Chips Sponsor" />
+          </Link>
+        </div>
        </div>
 
 

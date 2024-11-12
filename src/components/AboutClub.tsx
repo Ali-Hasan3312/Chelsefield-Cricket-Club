@@ -27,6 +27,15 @@ const AboutClub = () => {
 
   return (
     <div className="w-full bg-white pt-8">
+      <div className="w-full bg-white pt-8">
+      {/* Marquee Running Stripe */}
+     
+      <div className="marquee">
+      <div className="marquee-content">
+        <span>Kent’s Oldest Cricket Club,Established 1731 • Kent’s Oldest Cricket Club,Established 1731 </span>
+      </div>
+      </div>
+    </div>
       <h1 className="text-2xl max-sm:text-lg uppercase font-semibold text-center pt-4 tracking-wider">
         Find out more about the club
       </h1>

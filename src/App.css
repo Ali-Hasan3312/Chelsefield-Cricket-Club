@@ -166,3 +166,30 @@
 .chels{
   font-family: "cambridge", sans-serif;
 }
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #0e0d0d;
+  color: #f9f9f9;
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite; /* Adjust duration for desired speed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End fully to the left */
+  }
+}
