@@ -1,7 +1,7 @@
 import { useState } from "react";
 import groundWork from "../assets/News/Groun Work.jpg";
 import ManOfMatch from "../assets/News/Man of the match.jpg";
-import indoorleague from "../assets/All Teams/Indoor League New.jpg";
+import indoorleague from "../assets/All Teams/Indoor League New 2.jpg";
 import FourthNews from "../assets/News/fourth News.jpg"
 import { Link } from "react-router-dom";
 const LatestNews = () => {
@@ -26,9 +26,9 @@ const LatestNews = () => {
 
   return (
     <div className="w-full bg-white mt-16">
-      <h1 className="text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
+      <Link to="/all-news" className="flex items-center justify-center text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
         Latest News
-      </h1>
+      </Link>
       <div className="w-[80%] bg-white mx-auto mt-8">
        
         {/* News Item 1 */}

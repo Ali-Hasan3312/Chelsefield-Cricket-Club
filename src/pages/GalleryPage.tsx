@@ -5,7 +5,7 @@ import image11 from "../assets/Our Gallery/image11.jpg";
 import image12 from "../assets/Our Gallery/image12.jpg";
 import image13 from "../assets/Our Gallery/image13.jpg";
 import image15 from "../assets/Our Gallery/image15.jpg";
-import image16 from "../assets/Our Gallery/image16.jpg";
+import image16 from "../assets/Our Gallery/image16 New.jpg";
 import image18 from "../assets/Our Gallery/image18.jpg";
 import image19 from "../assets/Our Gallery/image19.jpg";
 import image2 from "../assets/Our Gallery/image2.jpg";

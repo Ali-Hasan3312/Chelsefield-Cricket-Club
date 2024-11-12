@@ -27,7 +27,6 @@ const OurTeams = () => {
         Meet the Teams Driving Our Success
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-          
         <div>
               <h3 className="text-2xl font-semibold text-gray-700">Saturday 1st XI</h3>
               <p className="text-lg text-gray-600 font-medium">Captain: Ahsan Sher</p>
@@ -36,14 +35,14 @@ const OurTeams = () => {
           <img
             src={Ahsan}
             alt="Pitch Preparation"
-            className="rounded-lg h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg h-auto md:h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <img
             src={Asjad}
             alt="Pitch Preparation"
-            className="rounded-lg h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg h-auto md:h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
           />
         <div>
               <h3 className="text-2xl font-semibold text-gray-700">Saturday 2nd XI</h3>
@@ -62,14 +61,14 @@ const OurTeams = () => {
             <img
             src={thirdCaptain}
             alt="Pitch Preparation"
-            className="rounded-lg h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg h-auto md:h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <img
             src={sundaycaptain}
             alt="Pitch Preparation"
-            className="rounded-lg h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg h-auto md:h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
           />
         <div>
               <h3 className="text-2xl font-semibold text-gray-700">Sunday Tigers</h3>
@@ -90,14 +89,14 @@ const OurTeams = () => {
             <img
             src={IndoorCaptain}
             alt="Pitch Preparation"
-            className="rounded-lg h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg h-auto md:h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <img
             src={T20captain}
             alt="Pitch Preparation"
-            className="rounded-lg h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-lg h-auto md:h-[400px] w-full lg:w-[450px] mx-auto shadow-lg hover:scale-105 transition-transform duration-300"
           />
         <div>
               <h3 className="text-2xl font-semibold text-gray-700">T20 Team</h3>

@@ -42,7 +42,7 @@ const Sponsors = () => {
        <img className='w-[340px] h-[220px] object-contain' src={hymglobal} alt="" />
        </Link>
       </div>
-      <div className='-mt-16 max-sm:ml-8'>
+      <div className='-mt-16 -ml-14 max-sm:ml-8'>
         <Link to={"http://Ff-accountants.co.uk"}>
        <img className='w-[340px] max-sm:w-[420px] h-[200px] object-contain' src={FandFAccountants} alt="" />
         </Link>

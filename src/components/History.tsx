@@ -24,14 +24,14 @@ const History = () => {
 
   return (
     <div className="w-full bg-white pt-8 pb-16">
-      <h1 className="text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
+      <Link to="/club-history" className="flex items-center justify-center text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
         Club History
-      </h1>
+      </Link>
       <div className="flex max-sm:flex-col  gap-8 items-center justify-center mt-8 md:w-[80%] w-[90%] mx-auto">
         {/* Section 1 */}
-        <div className="h-[400px] md:w-[500px] w-full mx-auto flex flex-col gap-3 text-center">
+        <div className="h-[400px] md:w-[600px] w-full mx-auto flex flex-col gap-3 text-center">
           <img
-            className="h-[330px] w-[500px] mx-auto cursor-pointer"
+            className="h-[330px] w-[600px] mx-auto cursor-pointer"
             src={clubHistory}
             alt="Club History"
             onClick={() => openModal(clubHistory)} // Open modal on click
@@ -48,14 +48,23 @@ const History = () => {
         </div>
 
         {/* Section 2 */}
-        <div className="h-[400px] md:w-[500px] w-full mx-auto flex flex-col gap-3 text-center">
+       
+      </div>
+
+
+      <Link to="/about" className="flex items-center mt-16 justify-center text-2xl uppercase font-semibold text-center pt-4 tracking-wider">
+        Chairman's Statement
+      </Link>
+      <div>
+
+ <div className="h-[400px] w-[90%] md:w-[500px] mt-8 mx-auto flex flex-col gap-3 text-center">
           <img
-            className="h-[330px] w-[500px] mx-auto cursor-pointer"
+            className="h-[330px] w-full mx-auto cursor-pointer"
             src={aboutImage}
             alt="Old Pavilion"
             onClick={() => openModal(aboutImage)} // Open modal on click
           />
-          <Link to={"/about"} className="text-lg font-semibold">Chairman's Statement</Link>
+          
           <p className="text-sm">
              As Chairman of this great club, I would like to take this
               opportunity to extend my heartfelt thanks to everyone who has been
@@ -66,6 +75,7 @@ const History = () => {
           </p>
         </div>
       </div>
+
 
       {/* Modal */}
       {isOpen && (
