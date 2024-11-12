@@ -110,15 +110,7 @@ const JoinUs = () => {
                         onChange={handleChange}
                         className=" border border-gray-400 w-full text-black py-2 px-4 rounded-md" />
                        </div>
-                      <div>
-                      <label htmlFor="phone">Postcode:</label>
-                      <input 
-                      type="text"
-                      name="postcode"
-                      value={formData.postcode}
-                      onChange={handleChange}
-                      className=" border border-gray-400 w-full text-black py-2 px-4 rounded-md" />
-                      </div>
+                     
                       <div>
                        <label htmlFor="email">Email</label>
                        <input
@@ -145,6 +137,15 @@ const JoinUs = () => {
                 value={formData.address}
                 onChange={handleChange}
                  className=" border border-gray-400 w-full text-black py-2 px-4 rounded-md" />
+                      </div>
+                      <div>
+                      <label htmlFor="phone">Postcode:</label>
+                      <input 
+                      type="text"
+                      name="postcode"
+                      value={formData.postcode}
+                      onChange={handleChange}
+                      className=" border border-gray-400 w-full text-black py-2 px-4 rounded-md" />
                       </div>
                      </div>
                         <span className=" text-xl max-sm:text-base font-semibold mt-8">Emergency Contact Details
@@ -245,18 +246,7 @@ const JoinUs = () => {
                          onChange={handleChange}
                         className=" border border-gray-400 w-full text-black py-2 px-4 rounded-md" rows={4}></textarea>
                        
-                       <div className="flex items-center gap-2 mt-4">
-              <input
-                type="checkbox"
-                id="termsCheckbox"
-                checked={isChecked}
-                onChange={handleCheckboxChange}
-              />
-              <label htmlFor="termsCheckbox" className="text-sm">
-                I have read and agree with the <span className="font-semibold">terms and conditions</span>.
-              </label>
-            </div>
-                        <button  disabled={!isChecked} className={`bg-blue-900 text-white py-2 px-4 rounded-md ${!isChecked? "bg-opacity-70 cursor-not-allowed" : ""}`}>Join this club</button>
+                     
                     </div>
                 </form>
                 <div className='mt-10 w-[90%] max-sm:w-full bg-white rounded max-sm:px-6 px-12 py-8 text-black'>
@@ -295,6 +285,20 @@ const JoinUs = () => {
                </p>
               
            </div>
+          <div className="flex items-center gap-2 mt-4">
+              <input
+                type="checkbox"
+                id="termsCheckbox"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
+              <label htmlFor="termsCheckbox" className="text-sm">
+                I have read and agree with the <span className="font-semibold">terms and conditions</span>.
+              </label>
+            </div>
+          <div className='flex flex-col items-center justify-center'>
+                        <button  disabled={!isChecked} className={`bg-blue-900 mt-6 w-[300px] md:w-[500px] text-white py-2 px-4 rounded-md ${!isChecked? "bg-opacity-70 cursor-not-allowed" : ""}`}>Join this club</button>
+          </div>
                 </div>
         </div>
     </div>
